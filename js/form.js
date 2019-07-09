@@ -60,10 +60,4 @@ class ContactForm extends Component {
     }
 }
 
-class App extends Component {
-    render() {
-        return <ContactForm />
-    }
-}
-
-ReactDOM.render(<App />, document.getElementById("app"));
+export default ContactForm;

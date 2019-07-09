@@ -7,6 +7,7 @@ import {
     Switch,
     NavLink,
 } from 'react-router-dom';
+import ContactForm from './form';
 
 class Portfolio extends Component {
     render() {
@@ -59,6 +60,7 @@ class Contact extends Component {
                 <NavLink exact to="/passions">My passions</NavLink><br />
                 <NavLink exact to="/offer">Offer</NavLink>
                 <h1>Send me a message</h1>
+                <Route exact path='/contact' component={ContactForm} />
             </>
         );
     }
