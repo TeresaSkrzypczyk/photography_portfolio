@@ -51,17 +51,16 @@ function Trash({products}) {
 function Information() {
     return (
             <>
-                <h1>Practical Informations</h1>
+                <h1>Practical Information</h1>
                 <ul>
-                    <li>It will be nice to call me by my name, but of course you can decide for yourself</li>
-                    <li>The photographic material will be prepared within 20 working days after they have been taken</li>
-                    <li>If it will be additions cost like admission tickets they're on our side</li>
+                    <li>The photographic material will be ready within 20 working days after the photoshoot</li>
+                    <li>Additional cost eg. admission tickets are on your side</li>
                     <li>The prices quoted are gross prices</li>
                 </ul>
                 <h2>During the wedding day:</h2>
                 <ul>
-                    <li>I can go everywhere in the Lower Silesian for free, in other cases, the cost shall be determinated individual</li>
-                    <li>If your wedding will be organized more than 100km form Wrocław I please to book me accommodation</li>
+                    <li>I can travel for the job in the Lower Silesia for no charge, for longer distances, the cost shall be determinated individually</li>
+                    <li>If your wedding is more than 100km form Wrocław I require accommodation</li>
                 </ul>
             </>
     );

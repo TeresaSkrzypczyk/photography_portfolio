@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import ReactDOM from "react-dom";
+import DatePicker from 'react-datepicker';
 
 class ContactForm extends Component {
     constructor(props) {
@@ -7,6 +8,7 @@ class ContactForm extends Component {
         this.state = {
             name: "",
             email: "",
+            date: new Date(),
             text: "",
             errors: [],
             send: false
@@ -45,9 +47,14 @@ class ContactForm extends Component {
     render() {
         const form = (
             <form onSubmit={e => this.handleSubmit(e)}>
-                Name: <input type="text" name="name" value={this.state.name} onChange={e => this.handleChange(e)} /><br />
-                E-mail: <input type="email" name="email" value={this.state.email} onChange={e => this.handleChange(e)} /><br />
-                Message: <textarea type="text" name="text" value={this.state.text} onChange={e => this.handleChange(e)} /><br />
+                <label>Name: </label>
+                    <input type="text" name="name" value={this.state.name} onChange={e => this.handleChange(e)} /><br />
+                <label>E-mail: </label>
+                    <input type="email" name="email" value={this.state.email} onChange={e => this.handleChange(e)} /><br />
+                <label>Select date: </label>
+                    <DatePicker selected={this.state.date} onChange={e => this.handleChange(e)} />
+                <label>Message: </label>
+                    <textarea type="text" name="text" value={this.state.text} onChange={e => this.handleChange(e)} /><br />
                 <button type="submit">Send</button>
             </form>
         );
