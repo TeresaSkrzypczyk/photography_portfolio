@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import ReactDOM from "react-dom";
 import DatePicker from 'react-datepicker';
+//import "react-datepicker/dist/react-datepicker.css";
 
 class ContactForm extends Component {
     constructor(props) {
@@ -8,7 +9,7 @@ class ContactForm extends Component {
         this.state = {
             name: "",
             email: "",
-            date: new Date(),
+            startDate: new Date(),
             text: "",
             errors: [],
             send: false
@@ -17,8 +18,14 @@ class ContactForm extends Component {
 
     handleChange(e) {
         this.setState({
-            [e.target.name]: e.target.value
+            [e.target.name]: e.target.value,
         });
+    }
+
+    handleChangeDate(date) {
+        this.setState({
+            startDate: date
+        })
     }
 
     handleSubmit(e) {
@@ -52,7 +59,7 @@ class ContactForm extends Component {
                 <label>E-mail: </label>
                     <input type="email" name="email" value={this.state.email} onChange={e => this.handleChange(e)} /><br />
                 <label>Select date: </label>
-                    <DatePicker selected={this.state.date} onChange={e => this.handleChange(e)} />
+                <DatePicker name="startDate" selected={this.state.startDate} onChange={e => this.handleChangeDate(e)} />
                 <label>Message: </label>
                     <textarea type="text" name="text" value={this.state.text} onChange={e => this.handleChange(e)} /><br />
                 <button type="submit">Send</button>

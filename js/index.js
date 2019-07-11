@@ -8,6 +8,7 @@ import {
     NavLink,
 } from 'react-router-dom';
 import ContactForm from './form';
+import Offer from './offer';
 
 class Portfolio extends Component {
     render() {
@@ -46,6 +47,7 @@ class PriceList extends Component {
                 <NavLink exact to="/passions">My passions</NavLink><br />
                 <NavLink exact to="/contact">Contact</NavLink>
                 <h1>Offer</h1>
+                <Route exact path='/offer' component={Offer} />
             </>
         );
     }

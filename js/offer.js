@@ -6,47 +6,73 @@ class Prices extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            cartProducts: [],
+            chosen: [],
             availableProducts: props.list,
         };
     }
 
-    handleBuy(product) {
+    handleBuyPick(product) {
         const availableProducts = [...this.state.availableProducts];
-        const cartProducts = [...this.state.cartProducts, product];
+        const chosen = [...this.state.chosen, product];
         const stillAvailable = availableProducts.filter(x => x.id !== product.id);
 
-        this.setState({cartProducts, availableProducts: stillAvailable})
+        this.setState({chosen, availableProducts: stillAvailable})
+    }
+
+    handleBuyUnsubscribe (product) {
+        const chosen = [...this.state.chosen];
+        const availableProducts = [...this.state.availableProducts, product];
+        const stillChosen = chosen.filter(y => y.id !== product.id);
+
+        this.setState({availableProducts, chosen: stillChosen})
     }
 
     render() {
-        return (<>
-            <Products products={this.state.availableProducts} onBuy={e => this.handleBuy(e)}/>
-            <Trash products={this.state.cartProducts} />
-        </>);
+        return (
+            <>
+                <h2>If you want to catch a moment select your options</h2>
+                <Products products={this.state.availableProducts} onBuy={e => this.handleBuyPick(e)}/>
+
+                <h2>What you've chosen?</h2>
+                <Trash products={this.state.chosen} onBuy={e => this.handleBuyUnsubscribe(e)}/>
+            </>);
     }
 }
 
 function Products({products, onBuy}) {
     return (<>
-        <h2>If you want to catch a moment select your options</h2>
         <ul>
-            {products.map(product => <li key={product.id}>
-                {product.name} {product.detail} {product.price}zł
-                <button onClick={e => onBuy(product)}>Kup</button>
+            {products.map(product =>
+                <li key={product.id}> {product.name} {product.detail} {product.price}pln <br />
+                    <button onClick={e => onBuy(product)}>Pick</button>
             </li>)}
         </ul>
     </>);
 }
 
-function Trash({products}) {
-    return (<>
-        <h2>What you've chosen?</h2>
-        <ul>
-            {products.map(product => <li key={product.id}>{product.name} {product.price}zł</li>)}
-        </ul>
-    </>);
+function Trash({products, onBuy}) {
+    return (
+        <>
+            <ul>
+                {products.map(product =>
+                    <li key={product.id} prices={product.price}>{product.name} {product.detail} {product.price}pln <br />
+                        <button onClick={e => onBuy(product)}>Resignation</button>
+                    </li>)}
+            </ul>
+
+            <ul>
+                {products.map(product =>
+                    <li key={product.id}>{product.price}pln <br />
+                    </li>)}
+            </ul>
+        </>);
 }
+
+// function TotalPrice({totalPrice}) {
+//     return (
+//         <h2>{totalPrice.reduce((acc, val) => acc + val, 0)}</h2>
+//     );
+// }
 
 function Information() {
     return (
@@ -66,7 +92,7 @@ function Information() {
     );
 }
 
-function App() {
+function Offer() {
     return (
             <>
                 <Prices list={list} />
@@ -75,4 +101,4 @@ function App() {
     );
 }
 
-ReactDOM.render(<App/>, document.getElementById("app"));
+export default Offer;

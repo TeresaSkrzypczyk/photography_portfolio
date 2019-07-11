@@ -60,9 +60,9 @@ export default [
         price: 500.00
     },
     {
-        id: 10,
+        id: 11,
         name: "Album",
-        detail: "special photo album form a session or wediing",
+        detail: "special photo album from a session or wediing",
         price: 200.00
     }
 ]

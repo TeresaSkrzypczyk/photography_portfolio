@@ -5,7 +5,8 @@ module.exports = {
     entry: `./js/${entryFile}`,
     output: {
         filename: "out.js",
-        path: path.resolve(__dirname, "build")
+        path: path.resolve(__dirname, "build"),
+        library: 'DayPicker',
     },
     devServer: {
         contentBase: path.join(__dirname, "/"),
