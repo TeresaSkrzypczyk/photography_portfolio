@@ -9,6 +9,7 @@ import {
 } from 'react-router-dom';
 import ContactForm from './form';
 import Offer from './offer';
+import '../scss/main.scss';
 
 class Portfolio extends Component {
     render() {
