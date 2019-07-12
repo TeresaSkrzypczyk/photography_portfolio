@@ -9,7 +9,7 @@ import {
 } from 'react-router-dom';
 import ContactForm from './form';
 import Offer from './offer';
-import '../scss/main.scss';
+import Welcome from './home';
 
 class Portfolio extends Component {
     render() {
@@ -72,15 +72,17 @@ class Contact extends Component {
 class Main extends Component{
     render() {
         return (
-            <div>
-                <h1>Hello in this beautiful day!</h1>
-                <ul>
-                    <li><NavLink exact to='/portfolio'>My portfolio</NavLink></li>
-                    <li><NavLink exact to='/passions'>My passions</NavLink></li>
-                    <li><NavLink exact to='/offer'>Offer</NavLink></li>
-                    <li><NavLink exact to='/contact'>Contact</NavLink></li>
-                </ul>
-            </div>
+                <>
+                    <div>
+                        <ul>
+                            <li><NavLink exact to='/portfolio'>My portfolio</NavLink></li>
+                            <li><NavLink exact to='/passions'>My passions</NavLink></li>
+                            <li><NavLink exact to='/offer'>Offer</NavLink></li>
+                            <li><NavLink exact to='/contact'>Contact</NavLink></li>
+                        </ul>
+                    </div>
+                    <Route exact path='/' component={Welcome} />
+                </>
         );
     }
 }
