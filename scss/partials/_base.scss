@@ -7,6 +7,9 @@
 html, body {
   background-color: $color-background;
   color: $color-text;
+  font-family: 'Garamond', 'Arial', sans-serif;
+  font-size: $font-size;
+  //font-family: $font-merienda;
 }
 
 .wrapper {

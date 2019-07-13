@@ -2,7 +2,9 @@ const path = require("path");
 const entryFile = "index.js";
 
 module.exports = {
-    entry: `./js/${entryFile}`,
+    entry: {
+        bundle: [`./js/${entryFile}`, `./scss/main.scss`]
+    },
     output: {
         filename: "out.js",
         path: path.resolve(__dirname, "build"),

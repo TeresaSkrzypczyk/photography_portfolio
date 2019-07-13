@@ -1,33 +1,33 @@
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -1rem -0.5rem 0 -0.5rem;
-}
-
-@for $i from 1 through 12 {
-  .col-xs-#{$i} {
-    margin-top: 1rem;
-    padding: 0 0.5rem;
-    width: 100% * ($i / 12);
-  }
-}
-
-@for $i from 1 through 12 {
-  @media (min-width: $screen-xs) {
-    .col-sm-#{$i} {
-      margin-top: 1rem;
-      padding: 0 0.5rem;
-      width: 100% * ($i / 12);
-    }
-  }
-}
-
-@for $i from 1 through 12 {
-  @media (min-width: $screen-sm) {
-    .col-md-#{$i} {
-      margin-top: 1rem;
-      padding: 0 0.5rem;
-      width: 100% * ($i / 12);
-    }
-  }
-}
+//.row {
+//  display: flex;
+//  flex-wrap: wrap;
+//  margin: -1rem -0.5rem 0 -0.5rem;
+//}
+//
+//@for $i from 1 through 12 {
+//  .col-xs-#{$i} {
+//    margin-top: 1rem;
+//    padding: 0 0.5rem;
+//    width: 100% * ($i / 12);
+//  }
+//}
+//
+//@for $i from 1 through 12 {
+//  @media (min-width: $screen-xs) {
+//    .col-sm-#{$i} {
+//      margin-top: 1rem;
+//      padding: 0 0.5rem;
+//      width: 100% * ($i / 12);
+//    }
+//  }
+//}
+//
+//@for $i from 1 through 12 {
+//  @media (min-width: $screen-sm) {
+//    .col-md-#{$i} {
+//      margin-top: 1rem;
+//      padding: 0 0.5rem;
+//      width: 100% * ($i / 12);
+//    }
+//  }
+//}
