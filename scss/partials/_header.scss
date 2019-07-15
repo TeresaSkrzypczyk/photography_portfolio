@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  .logo {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  ul {
+    //display: none;
+    list-style-type: none;
+
+    li {
+      cursor: pointer;
+      display: inline-block;
+      font-weight: 700;
+      margin-left: 1rem;
+
+      .decor {
+        text-decoration: none;
+        color: $color-text;
+
+        &:hover {
+          background-color: $color-text;
+          border-radius: $border-radius;
+          color: $color-background;
+          padding: 0.25rem 0.5rem;
+          transition: $transition-primary;
+        }
+
+      }
+
+    }
+
+  }
+
+}

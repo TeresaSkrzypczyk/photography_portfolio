@@ -73,12 +73,13 @@ class Main extends Component{
     render() {
         return (
                 <>
-                    <div>
+                    <div className="wrapper header flex1">
+                        <div className="logo"><i className="fas fa-paw"></i></div>
                         <ul>
-                            <li><NavLink exact to='/portfolio'>My portfolio</NavLink></li>
-                            <li><NavLink exact to='/passions'>My passions</NavLink></li>
-                            <li><NavLink exact to='/offer'>Offer</NavLink></li>
-                            <li><NavLink exact to='/contact'>Contact</NavLink></li>
+                            <li><NavLink exact to='/portfolio' className="decor">My portfolio</NavLink></li>
+                            <li><NavLink exact to='/passions' className="decor">My passions</NavLink></li>
+                            <li><NavLink exact to='/offer' className="decor">Offer</NavLink></li>
+                            <li><NavLink exact to='/contact' className="decor">Contact</NavLink></li>
                         </ul>
                     </div>
                     <Route exact path='/' component={Welcome} />
