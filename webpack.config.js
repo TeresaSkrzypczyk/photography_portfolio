@@ -39,6 +39,26 @@ module.exports = {
                         sourceMap: true
                     }
                 }]
+            },
+            {
+                test: /\.css$/,
+                use: [{
+                    loader: "style-loader", options: {
+                        sourceMap: true
+                    }
+                }, {
+                    loader: "css-loader", options: {
+                        sourceMap: true
+                    }
+                }, {
+                    loader: "sass-loader", options: {
+                        sourceMap: true
+                    }
+                }]
+            },
+            {
+                test: /\.(jpg|jpeg|png|woff|woff2|eot|ttf|svg)$/,
+                loader: 'url-loader?limit=100000'
             }
         ]
     }
