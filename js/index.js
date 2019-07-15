@@ -10,6 +10,12 @@ import {
 import ContactForm from './form';
 import Offer from './offer';
 import Welcome from './home';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPaw } from '@fortawesome/free-solid-svg-icons';
+import { faMugHot } from '@fortawesome/free-solid-svg-icons';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faCopyright } from '@fortawesome/free-solid-svg-icons';
+
 
 class Portfolio extends Component {
     render() {
@@ -73,16 +79,29 @@ class Main extends Component{
     render() {
         return (
                 <>
-                    <div className="wrapper header flex1">
-                        <div className="logo"><i className="fas fa-paw"></i></div>
-                        <ul>
-                            <li><NavLink exact to='/portfolio' className="decor">My portfolio</NavLink></li>
-                            <li><NavLink exact to='/passions' className="decor">My passions</NavLink></li>
-                            <li><NavLink exact to='/offer' className="decor">Offer</NavLink></li>
-                            <li><NavLink exact to='/contact' className="decor">Contact</NavLink></li>
-                        </ul>
+                    <div className="wrapper">
+                        <div className="header">
+                            <div className="logo">Moments <FontAwesomeIcon icon={faPaw} /> trace</div>
+                            <div className="menu">
+                                <ul>
+                                    <li><NavLink exact to="/" className="decor">Home</NavLink></li>
+                                    <li><NavLink exact to='/portfolio' className="decor">My portfolio</NavLink></li>
+                                    <li><NavLink exact to='/passions' className="decor">My passions</NavLink></li>
+                                    <li><NavLink exact to='/offer' className="decor">Offer</NavLink></li>
+                                    <li><NavLink exact to='/contact' className="decor">Contact</NavLink></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <Route exact path='/' component={Welcome} />
+                        <div className="footer">
+                            <div>
+                                <p>Sit with me, take <FontAwesomeIcon icon={faMugHot} /> and catch the moments <FontAwesomeIcon icon={faHeart} /></p>
+                            </div>
+                            <div>
+                                <p><FontAwesomeIcon icon={faCopyright} /> Teresa Ziółkowska 2019 </p>
+                            </div>
+                        </div>
                     </div>
-                    <Route exact path='/' component={Welcome} />
                 </>
         );
     }

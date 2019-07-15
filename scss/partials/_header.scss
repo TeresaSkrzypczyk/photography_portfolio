@@ -1,12 +1,11 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  margin-bottom: 3rem;
+  justify-content: space-between;
 
   .logo {
-    display: inline-block;
     font-size: 1.5rem;
-    padding: 0.25rem 0.5rem;
   }
 
   ul {
@@ -29,6 +28,13 @@
           color: $color-background;
           padding: 0.25rem 0.5rem;
           transition: $transition-primary;
+        }
+
+        &.active {
+          background-color: $color-text;
+          border-radius: $border-radius;
+          color: $color-background;
+          padding: 0.25rem 0.5rem;
         }
 
       }

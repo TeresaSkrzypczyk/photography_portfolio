@@ -1,0 +1,14 @@
+.footer {
+  font-size: $font-size;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 0;
+  flex-direction: column;
+
+  :last-child {
+    font-size: 0.75rem;
+    color: $color-secondary;
+  }
+
+}
