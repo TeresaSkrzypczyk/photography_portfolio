@@ -1,7 +1,8 @@
 .mobile-section {
   position: absolute;
   top: 2rem;
-  right: 2rem;
+  left: 1rem;
+  visibility: visible;
 
   button {
     background-color: $color-background;
@@ -10,12 +11,12 @@
     color: $color-text;
     font-size: 1.25rem;
     padding: 0.5rem 1.25rem;
-    transition: $transition-primary;
+    //transition: $transition-primary;
   }
 
   ul {
     background-color: $color-text;
-    color: $color-background;
+    border-radius: $border-radius;
     display: none;
     list-style: none;
 
@@ -25,7 +26,7 @@
 
     .mobile-decor {
       text-decoration: none;
-      color: $color-text;
+      color: $color-background;
     }
 
   }
@@ -37,9 +38,17 @@
       color: $color-background;
     }
 
+    .mobile-decor:hover {
+       color: darkred;
+     }
+
     ul {
       display: block;
     }
+
   }
 
+  @media (min-width: $screen-xs) {
+      visibility: hidden;
+  }
 }

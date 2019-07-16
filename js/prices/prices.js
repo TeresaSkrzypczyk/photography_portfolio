@@ -65,4 +65,4 @@ export default [
         detail: "special photo album from a session or wediing",
         price: 200.00
     }
-]
+];

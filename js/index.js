@@ -17,7 +17,6 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { faCopyright } from '@fortawesome/free-solid-svg-icons';
 import {faFacebookSquare, faInstagram, faTwitterSquare} from "@fortawesome/free-brands-svg-icons";
 
-
 class Portfolio extends Component {
     render() {
         return (
