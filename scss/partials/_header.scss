@@ -1,15 +1,21 @@
 .header {
-  display: flex;
   align-items: center;
-  margin-bottom: 3rem;
+  display: flex;
   justify-content: space-between;
+  margin-bottom: 3rem;
 
   .logo {
+    display: inline-block;
     font-size: 1.5rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .menu {
+    display: none;
   }
 
   ul {
-    //display: none;
+    display: none;
     list-style-type: none;
 
     li {
@@ -21,12 +27,12 @@
       .decor {
         text-decoration: none;
         color: $color-text;
+        padding: 0.25rem 0.5rem;
 
         &:hover {
           background-color: $color-text;
           border-radius: $border-radius;
           color: $color-background;
-          padding: 0.25rem 0.5rem;
           transition: $transition-primary;
         }
 
@@ -34,11 +40,19 @@
           background-color: $color-text;
           border-radius: $border-radius;
           color: $color-background;
-          padding: 0.25rem 0.5rem;
         }
 
       }
 
+    }
+
+  }
+
+  @media (min-width: $screen-xs) {
+    justify-content: space-between;
+
+    .menu, ul {
+      display: block;
     }
 
   }
