@@ -46,6 +46,10 @@
       display: block;
     }
 
+    .mobile-decor.active {
+      color: darkred;
+    }
+
   }
 
   @media (min-width: $screen-xs) {

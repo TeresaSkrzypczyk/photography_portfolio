@@ -21,6 +21,17 @@ class Portfolio extends Component {
     render() {
         return (
             <>
+                <div className="mobile-section">
+                    <button className="mobile-button"><FontAwesomeIcon icon={faBars} /></button>
+                    <ul className="mobile-menu">
+                        <li><NavLink exact to="/" className="mobile-decor">Home</NavLink></li>
+                        <li><NavLink exact to='/portfolio' className="mobile-decor">My portfolio</NavLink></li>
+                        <li><NavLink exact to='/passions' className="mobile-decor">My passions</NavLink></li>
+                        <li><NavLink exact to='/offer' className="mobile-decor">Offer</NavLink></li>
+                        <li><NavLink exact to='/contact' className="mobile-decor">Contact</NavLink></li>
+                    </ul>
+                </div>
+
                 <div className="wrapper">
                     <div className="header">
                         <div className="logo">Moments <FontAwesomeIcon icon={faPaw} /> trace</div>
@@ -60,6 +71,17 @@ class Passions extends Component {
     render() {
         return (
             <>
+                <div className="mobile-section">
+                    <button className="mobile-button"><FontAwesomeIcon icon={faBars} /></button>
+                    <ul className="mobile-menu">
+                        <li><NavLink exact to="/" className="mobile-decor">Home</NavLink></li>
+                        <li><NavLink exact to='/portfolio' className="mobile-decor">My portfolio</NavLink></li>
+                        <li><NavLink exact to='/passions' className="mobile-decor">My passions</NavLink></li>
+                        <li><NavLink exact to='/offer' className="mobile-decor">Offer</NavLink></li>
+                        <li><NavLink exact to='/contact' className="mobile-decor">Contact</NavLink></li>
+                    </ul>
+                </div>
+
                 <div className="wrapper">
                     <div className="header">
                         <div className="logo">Moments <FontAwesomeIcon icon={faPaw} /> trace</div>
@@ -94,6 +116,17 @@ class PriceList extends Component {
     render() {
         return (
             <>
+                <div className="mobile-section">
+                    <button className="mobile-button"><FontAwesomeIcon icon={faBars} /></button>
+                    <ul className="mobile-menu">
+                        <li><NavLink exact to="/" className="mobile-decor">Home</NavLink></li>
+                        <li><NavLink exact to='/portfolio' className="mobile-decor">My portfolio</NavLink></li>
+                        <li><NavLink exact to='/passions' className="mobile-decor">My passions</NavLink></li>
+                        <li><NavLink exact to='/offer' className="mobile-decor">Offer</NavLink></li>
+                        <li><NavLink exact to='/contact' className="mobile-decor">Contact</NavLink></li>
+                    </ul>
+                </div>
+
                 <div className="wrapper">
                     <div className="header">
                         <div className="logo">Moments <FontAwesomeIcon icon={faPaw} /> trace</div>
@@ -129,6 +162,17 @@ class Contact extends Component {
     render() {
         return (
             <>
+                <div className="mobile-section">
+                    <button className="mobile-button"><FontAwesomeIcon icon={faBars} /></button>
+                    <ul className="mobile-menu">
+                        <li><NavLink exact to="/" className="mobile-decor">Home</NavLink></li>
+                        <li><NavLink exact to='/portfolio' className="mobile-decor">My portfolio</NavLink></li>
+                        <li><NavLink exact to='/passions' className="mobile-decor">My passions</NavLink></li>
+                        <li><NavLink exact to='/offer' className="mobile-decor">Offer</NavLink></li>
+                        <li><NavLink exact to='/contact' className="mobile-decor">Contact</NavLink></li>
+                    </ul>
+                </div>
+
                 <div className="wrapper">
                     <div className="header">
                         <div className="logo">Moments <FontAwesomeIcon icon={faPaw} /> trace</div>
