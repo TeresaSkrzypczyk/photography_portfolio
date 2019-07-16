@@ -10,6 +10,7 @@ import {
 import ContactForm from './form';
 import Offer from './offer';
 import Welcome from './home';
+import Photo from './passions';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faBars, faPaw} from '@fortawesome/free-solid-svg-icons';
 import { faMugHot } from '@fortawesome/free-solid-svg-icons';
@@ -97,6 +98,7 @@ class Passions extends Component {
                     </div>
 
                     <h1>My passions</h1>
+                    <Route exact path='/passions' component={Photo} />
 
                     <div className="footer">
                         <div>
