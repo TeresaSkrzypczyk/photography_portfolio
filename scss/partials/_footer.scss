@@ -6,9 +6,10 @@
   margin: 3rem 0;
   flex-direction: column;
 
-  :last-child {
+  :last-child p {
     font-size: 0.75rem;
     color: $color-secondary;
+    padding-top: 1rem;
   }
 
 }

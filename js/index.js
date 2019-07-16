@@ -15,17 +15,43 @@ import { faPaw } from '@fortawesome/free-solid-svg-icons';
 import { faMugHot } from '@fortawesome/free-solid-svg-icons';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { faCopyright } from '@fortawesome/free-solid-svg-icons';
+import {faFacebookSquare, faInstagram, faTwitterSquare} from "@fortawesome/free-brands-svg-icons";
 
 
 class Portfolio extends Component {
     render() {
         return (
             <>
-                <NavLink exact to="/">Home</NavLink><br />
-                <NavLink exact to="/passions">My passions</NavLink><br />
-                <NavLink exact to="/offer">Offer</NavLink><br />
-                <NavLink exact to="/contact">Contact</NavLink>
-                <h1>My portfolio</h1>
+                <div className="wrapper">
+                    <div className="header">
+                        <div className="logo">Moments <FontAwesomeIcon icon={faPaw} /> trace</div>
+                        <div className="menu">
+                            <ul>
+                                <li><NavLink exact to="/" className="decor">Home</NavLink></li>
+                                <li><NavLink exact to='/portfolio' className="decor">My portfolio</NavLink></li>
+                                <li><NavLink exact to='/passions' className="decor">My passions</NavLink></li>
+                                <li><NavLink exact to='/offer' className="decor">Offer</NavLink></li>
+                                <li><NavLink exact to='/contact' className="decor">Contact</NavLink></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h1>My portfolio</h1>
+
+                    <div className="footer">
+                        <div>
+                            <p>Sit with me, take <FontAwesomeIcon icon={faMugHot} /> and catch the moments <FontAwesomeIcon icon={faHeart} /></p>
+                        </div>
+                        <div className="icon">
+                            <FontAwesomeIcon icon={faInstagram} />
+                            <FontAwesomeIcon icon={faTwitterSquare} />
+                            <FontAwesomeIcon icon={faFacebookSquare} />
+                        </div>
+                        <div>
+                            <p><FontAwesomeIcon icon={faCopyright} /> Teresa Ziółkowska 2019 </p>
+                        </div>
+                    </div>
+                </div>
             </>
         );
     }
@@ -35,11 +61,31 @@ class Passions extends Component {
     render() {
         return (
             <>
-                <NavLink exact to="/">Home</NavLink><br />
-                <NavLink exact to="/portfolio">My portfolio</NavLink><br />
-                <NavLink exact to="/offer">Offer</NavLink><br />
-                <NavLink exact to="/contact">Contact</NavLink>
-                <h1>My passions</h1>
+                <div className="wrapper">
+                    <div className="header">
+                        <div className="logo">Moments <FontAwesomeIcon icon={faPaw} /> trace</div>
+                        <div className="menu">
+                            <ul>
+                                <li><NavLink exact to="/" className="decor">Home</NavLink></li>
+                                <li><NavLink exact to='/portfolio' className="decor">My portfolio</NavLink></li>
+                                <li><NavLink exact to='/passions' className="decor">My passions</NavLink></li>
+                                <li><NavLink exact to='/offer' className="decor">Offer</NavLink></li>
+                                <li><NavLink exact to='/contact' className="decor">Contact</NavLink></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h1>My passions</h1>
+
+                    <div className="footer">
+                        <div>
+                            <p>Sit with me, take <FontAwesomeIcon icon={faMugHot} /> and catch the moments <FontAwesomeIcon icon={faHeart} /></p>
+                        </div>
+                        <div>
+                            <p><FontAwesomeIcon icon={faCopyright} /> Teresa Ziółkowska 2019 </p>
+                        </div>
+                    </div>
+                </div>
             </>
         );
     }
@@ -49,12 +95,32 @@ class PriceList extends Component {
     render() {
         return (
             <>
-                <NavLink exact to="/">Home</NavLink><br />
-                <NavLink exact to="/portfolio">My portfolio</NavLink><br />
-                <NavLink exact to="/passions">My passions</NavLink><br />
-                <NavLink exact to="/contact">Contact</NavLink>
-                <h1>Offer</h1>
-                <Route exact path='/offer' component={Offer} />
+                <div className="wrapper">
+                    <div className="header">
+                        <div className="logo">Moments <FontAwesomeIcon icon={faPaw} /> trace</div>
+                        <div className="menu">
+                            <ul>
+                                <li><NavLink exact to="/" className="decor">Home</NavLink></li>
+                                <li><NavLink exact to='/portfolio' className="decor">My portfolio</NavLink></li>
+                                <li><NavLink exact to='/passions' className="decor">My passions</NavLink></li>
+                                <li><NavLink exact to='/offer' className="decor">Offer</NavLink></li>
+                                <li><NavLink exact to='/contact' className="decor">Contact</NavLink></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h1>Offer</h1>
+                    <Route exact path='/offer' component={Offer} />
+
+                    <div className="footer">
+                        <div>
+                            <p>Sit with me, take <FontAwesomeIcon icon={faMugHot} /> and catch the moments <FontAwesomeIcon icon={faHeart} /></p>
+                        </div>
+                        <div>
+                            <p><FontAwesomeIcon icon={faCopyright} /> Teresa Ziółkowska 2019 </p>
+                        </div>
+                    </div>
+                </div>
             </>
         );
     }
@@ -64,12 +130,32 @@ class Contact extends Component {
     render() {
         return (
             <>
-                <NavLink exact to="/">Home</NavLink><br />
-                <NavLink exact to="/portfolio">My portfolio</NavLink><br />
-                <NavLink exact to="/passions">My passions</NavLink><br />
-                <NavLink exact to="/offer">Offer</NavLink>
-                <h1>Send me a message</h1>
-                <Route exact path='/contact' component={ContactForm} />
+                <div className="wrapper">
+                    <div className="header">
+                        <div className="logo">Moments <FontAwesomeIcon icon={faPaw} /> trace</div>
+                        <div className="menu">
+                            <ul>
+                                <li><NavLink exact to="/" className="decor">Home</NavLink></li>
+                                <li><NavLink exact to='/portfolio' className="decor">My portfolio</NavLink></li>
+                                <li><NavLink exact to='/passions' className="decor">My passions</NavLink></li>
+                                <li><NavLink exact to='/offer' className="decor">Offer</NavLink></li>
+                                <li><NavLink exact to='/contact' className="decor">Contact</NavLink></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h1>Send me a message</h1>
+                    <Route exact path='/contact' component={ContactForm} />
+
+                    <div className="footer">
+                        <div>
+                            <p>Sit with me, take <FontAwesomeIcon icon={faMugHot} /> and catch the moments <FontAwesomeIcon icon={faHeart} /></p>
+                        </div>
+                        <div>
+                            <p><FontAwesomeIcon icon={faCopyright} /> Teresa Ziółkowska 2019 </p>
+                        </div>
+                    </div>
+                </div>
             </>
         );
     }
@@ -92,7 +178,9 @@ class Main extends Component{
                                 </ul>
                             </div>
                         </div>
+
                         <Route exact path='/' component={Welcome} />
+
                         <div className="footer">
                             <div>
                                 <p>Sit with me, take <FontAwesomeIcon icon={faMugHot} /> and catch the moments <FontAwesomeIcon icon={faHeart} /></p>
