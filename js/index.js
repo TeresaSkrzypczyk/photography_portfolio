@@ -12,10 +12,7 @@ import Offer from './offer';
 import Welcome from './home';
 import Photo from './passions';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faBars, faPaw} from '@fortawesome/free-solid-svg-icons';
-import { faMugHot } from '@fortawesome/free-solid-svg-icons';
-import { faHeart } from '@fortawesome/free-solid-svg-icons';
-import { faCopyright } from '@fortawesome/free-solid-svg-icons';
+import {faBars, faPaw, faMugHot, faHeart, faCopyright} from '@fortawesome/free-solid-svg-icons';
 import {faFacebookSquare, faInstagram, faTwitterSquare} from "@fortawesome/free-brands-svg-icons";
 
 const mobileDiv = <div className="mobile-section">
