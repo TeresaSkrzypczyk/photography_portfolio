@@ -4,11 +4,12 @@
   "description": "final project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --hot -d",
-    "build": "webpack -p",
+    "test": "echo \"Error: no test specified\" && exit 1 && \"react-scripts test --env=jsdom\"",
+    "start": "webpack-dev-server --hot -d &&  \"react-scripts start\"",
+    "build": "webpack -p && \"react-scripts build\"",
     "build-css": "node-sass --include-path scss scss/main.scss   css/main.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\" "
+    "watch-css": "nodemon -e scss -x \"npm run build-css\" ",
+    "eject": "react-scripts eject"
   },
   "repository": {
     "type": "git",
@@ -57,6 +58,7 @@
     "react-grid-gallery": "^0.5.5",
     "react-images": "^1.0.0",
     "react-photo-gallery": "8.0.0",
-    "react-router-dom": "^5.0.1"
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "1.1.4"
   }
 }

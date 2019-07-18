@@ -64,7 +64,7 @@ class Portfolio extends Component {
                     {headerDiv}
 
                     <h1>My portfolio</h1>
-                    <Route exact path='/passions' component={Work} />
+                    <Route exact path='/portfolio' component={Work} /><br />
 
                     {footerDiv}
                 </div>
