@@ -18,50 +18,56 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { faCopyright } from '@fortawesome/free-solid-svg-icons';
 import {faFacebookSquare, faInstagram, faTwitterSquare} from "@fortawesome/free-brands-svg-icons";
 
+const mobileDiv = <div className="mobile-section">
+    <button className="mobile-button"><FontAwesomeIcon icon={faBars} /></button>
+    <ul className="mobile-menu">
+        <li><NavLink exact to="/" className="mobile-decor">Home</NavLink></li>
+        <li><NavLink exact to='/portfolio' className="mobile-decor">My portfolio</NavLink></li>
+        <li><NavLink exact to='/passions' className="mobile-decor">My passions</NavLink></li>
+        <li><NavLink exact to='/offer' className="mobile-decor">Offer</NavLink></li>
+        <li><NavLink exact to='/contact' className="mobile-decor">Contact</NavLink></li>
+    </ul>
+</div>;
+
+const headerDiv = <div className="header">
+    <div className="logo">Moments <FontAwesomeIcon icon={faPaw} /> trace</div>
+    <div className="menu">
+        <ul>
+            <li><NavLink exact to="/" className="decor">Home</NavLink></li>
+            <li><NavLink exact to='/portfolio' className="decor">My portfolio</NavLink></li>
+            <li><NavLink exact to='/passions' className="decor">My passions</NavLink></li>
+            <li><NavLink exact to='/offer' className="decor">Offer</NavLink></li>
+            <li><NavLink exact to='/contact' className="decor">Contact</NavLink></li>
+        </ul>
+    </div>
+</div>;
+
+const footerDiv = <div className="footer">
+    <div>
+        <p>Sit with me, take <FontAwesomeIcon icon={faMugHot} /> and catch the moments <FontAwesomeIcon icon={faHeart} /></p>
+    </div>
+    <div>
+        <FontAwesomeIcon icon={faInstagram} className="icon_media"/>
+        <FontAwesomeIcon icon={faTwitterSquare} className="icon_media"/>
+        <FontAwesomeIcon icon={faFacebookSquare} className="icon_media"/>
+    </div>
+    <div>
+        <p><FontAwesomeIcon icon={faCopyright} /> Teresa Ziółkowska 2019 </p>
+    </div>
+</div>;
+
+
 class Portfolio extends Component {
     render() {
         return (
             <>
-                <div className="mobile-section">
-                    <button className="mobile-button"><FontAwesomeIcon icon={faBars} /></button>
-                    <ul className="mobile-menu">
-                        <li><NavLink exact to="/" className="mobile-decor">Home</NavLink></li>
-                        <li><NavLink exact to='/portfolio' className="mobile-decor">My portfolio</NavLink></li>
-                        <li><NavLink exact to='/passions' className="mobile-decor">My passions</NavLink></li>
-                        <li><NavLink exact to='/offer' className="mobile-decor">Offer</NavLink></li>
-                        <li><NavLink exact to='/contact' className="mobile-decor">Contact</NavLink></li>
-                    </ul>
-                </div>
-
+                {mobileDiv}
                 <div className="wrapper">
-                    <div className="header">
-                        <div className="logo">Moments <FontAwesomeIcon icon={faPaw} /> trace</div>
-                        <div className="menu">
-                            <ul>
-                                <li><NavLink exact to="/" className="decor">Home</NavLink></li>
-                                <li><NavLink exact to='/portfolio' className="decor">My portfolio</NavLink></li>
-                                <li><NavLink exact to='/passions' className="decor">My passions</NavLink></li>
-                                <li><NavLink exact to='/offer' className="decor">Offer</NavLink></li>
-                                <li><NavLink exact to='/contact' className="decor">Contact</NavLink></li>
-                            </ul>
-                        </div>
-                    </div>
+                    {headerDiv}
 
                     <h1>My portfolio</h1>
 
-                    <div className="footer">
-                        <div>
-                            <p>Sit with me, take <FontAwesomeIcon icon={faMugHot} /> and catch the moments <FontAwesomeIcon icon={faHeart} /></p>
-                        </div>
-                        <div className="icon">
-                            <FontAwesomeIcon icon={faInstagram} />
-                            <FontAwesomeIcon icon={faTwitterSquare} />
-                            <FontAwesomeIcon icon={faFacebookSquare} />
-                        </div>
-                        <div>
-                            <p><FontAwesomeIcon icon={faCopyright} /> Teresa Ziółkowska 2019 </p>
-                        </div>
-                    </div>
+                    {footerDiv}
                 </div>
             </>
         );
@@ -72,30 +78,9 @@ class Passions extends Component {
     render() {
         return (
             <>
-                <div className="mobile-section">
-                    <button className="mobile-button"><FontAwesomeIcon icon={faBars} /></button>
-                    <ul className="mobile-menu">
-                        <li><NavLink exact to="/" className="mobile-decor">Home</NavLink></li>
-                        <li><NavLink exact to='/portfolio' className="mobile-decor">My portfolio</NavLink></li>
-                        <li><NavLink exact to='/passions' className="mobile-decor">My passions</NavLink></li>
-                        <li><NavLink exact to='/offer' className="mobile-decor">Offer</NavLink></li>
-                        <li><NavLink exact to='/contact' className="mobile-decor">Contact</NavLink></li>
-                    </ul>
-                </div>
-
+                {mobileDiv}
                 <div className="wrapper">
-                    <div className="header">
-                        <div className="logo">Moments <FontAwesomeIcon icon={faPaw} /> trace</div>
-                        <div className="menu">
-                            <ul>
-                                <li><NavLink exact to="/" className="decor">Home</NavLink></li>
-                                <li><NavLink exact to='/portfolio' className="decor">My portfolio</NavLink></li>
-                                <li><NavLink exact to='/passions' className="decor">My passions</NavLink></li>
-                                <li><NavLink exact to='/offer' className="decor">Offer</NavLink></li>
-                                <li><NavLink exact to='/contact' className="decor">Contact</NavLink></li>
-                            </ul>
-                        </div>
-                    </div>
+                    {headerDiv}
 
                     <h1 className="text_h1">My passions</h1>
                     <h3 className="text_h3">City, Landscape, Nature, People</h3>
@@ -103,14 +88,7 @@ class Passions extends Component {
                     <p className="text_p">Sometimes it's just enough to stop and open your eyes</p>
                     <br /><Route exact path='/passions' component={Photo} />
 
-                    <div className="footer">
-                        <div>
-                            <p>Sit with me, take <FontAwesomeIcon icon={faMugHot} /> and catch the moments <FontAwesomeIcon icon={faHeart} /></p>
-                        </div>
-                        <div>
-                            <p><FontAwesomeIcon icon={faCopyright} /> Teresa Ziółkowska 2019 </p>
-                        </div>
-                    </div>
+                    {footerDiv}
                 </div>
             </>
         );
@@ -121,42 +99,14 @@ class PriceList extends Component {
     render() {
         return (
             <>
-                <div className="mobile-section">
-                    <button className="mobile-button"><FontAwesomeIcon icon={faBars} /></button>
-                    <ul className="mobile-menu">
-                        <li><NavLink exact to="/" className="mobile-decor">Home</NavLink></li>
-                        <li><NavLink exact to='/portfolio' className="mobile-decor">My portfolio</NavLink></li>
-                        <li><NavLink exact to='/passions' className="mobile-decor">My passions</NavLink></li>
-                        <li><NavLink exact to='/offer' className="mobile-decor">Offer</NavLink></li>
-                        <li><NavLink exact to='/contact' className="mobile-decor">Contact</NavLink></li>
-                    </ul>
-                </div>
-
+                {mobileDiv}
                 <div className="wrapper">
-                    <div className="header">
-                        <div className="logo">Moments <FontAwesomeIcon icon={faPaw} /> trace</div>
-                        <div className="menu">
-                            <ul>
-                                <li><NavLink exact to="/" className="decor">Home</NavLink></li>
-                                <li><NavLink exact to='/portfolio' className="decor">My portfolio</NavLink></li>
-                                <li><NavLink exact to='/passions' className="decor">My passions</NavLink></li>
-                                <li><NavLink exact to='/offer' className="decor">Offer</NavLink></li>
-                                <li><NavLink exact to='/contact' className="decor">Contact</NavLink></li>
-                            </ul>
-                        </div>
-                    </div>
+                    {headerDiv}
 
                     <h1>Offer</h1>
                     <Route exact path='/offer' component={Offer} />
 
-                    <div className="footer">
-                        <div>
-                            <p>Sit with me, take <FontAwesomeIcon icon={faMugHot} /> and catch the moments <FontAwesomeIcon icon={faHeart} /></p>
-                        </div>
-                        <div>
-                            <p><FontAwesomeIcon icon={faCopyright} /> Teresa Ziółkowska 2019 </p>
-                        </div>
-                    </div>
+                    {footerDiv}
                 </div>
             </>
         );
@@ -167,42 +117,14 @@ class Contact extends Component {
     render() {
         return (
             <>
-                <div className="mobile-section">
-                    <button className="mobile-button"><FontAwesomeIcon icon={faBars} /></button>
-                    <ul className="mobile-menu">
-                        <li><NavLink exact to="/" className="mobile-decor">Home</NavLink></li>
-                        <li><NavLink exact to='/portfolio' className="mobile-decor">My portfolio</NavLink></li>
-                        <li><NavLink exact to='/passions' className="mobile-decor">My passions</NavLink></li>
-                        <li><NavLink exact to='/offer' className="mobile-decor">Offer</NavLink></li>
-                        <li><NavLink exact to='/contact' className="mobile-decor">Contact</NavLink></li>
-                    </ul>
-                </div>
-
+                {mobileDiv}
                 <div className="wrapper">
-                    <div className="header">
-                        <div className="logo">Moments <FontAwesomeIcon icon={faPaw} /> trace</div>
-                        <div className="menu">
-                            <ul>
-                                <li><NavLink exact to="/" className="decor">Home</NavLink></li>
-                                <li><NavLink exact to='/portfolio' className="decor">My portfolio</NavLink></li>
-                                <li><NavLink exact to='/passions' className="decor">My passions</NavLink></li>
-                                <li><NavLink exact to='/offer' className="decor">Offer</NavLink></li>
-                                <li><NavLink exact to='/contact' className="decor">Contact</NavLink></li>
-                            </ul>
-                        </div>
-                    </div>
+                    {headerDiv}
 
                     <h1>Send me a message</h1>
                     <Route exact path='/contact' component={ContactForm} />
 
-                    <div className="footer">
-                        <div>
-                            <p>Sit with me, take <FontAwesomeIcon icon={faMugHot} /> and catch the moments <FontAwesomeIcon icon={faHeart} /></p>
-                        </div>
-                        <div>
-                            <p><FontAwesomeIcon icon={faCopyright} /> Teresa Ziółkowska 2019 </p>
-                        </div>
-                    </div>
+                    {footerDiv}
                 </div>
             </>
         );
@@ -213,41 +135,13 @@ class Main extends Component{
     render() {
         return (
                 <>
-                    <div className="mobile-section">
-                        <button className="mobile-button"><FontAwesomeIcon icon={faBars} /></button>
-                        <ul className="mobile-menu">
-                            <li><NavLink exact to="/" className="mobile-decor">Home</NavLink></li>
-                            <li><NavLink exact to='/portfolio' className="mobile-decor">My portfolio</NavLink></li>
-                            <li><NavLink exact to='/passions' className="mobile-decor">My passions</NavLink></li>
-                            <li><NavLink exact to='/offer' className="mobile-decor">Offer</NavLink></li>
-                            <li><NavLink exact to='/contact' className="mobile-decor">Contact</NavLink></li>
-                        </ul>
-                    </div>
-
+                    {mobileDiv}
                     <div className="wrapper">
-                        <div className="header">
-                            <div className="logo">Moments <FontAwesomeIcon icon={faPaw} /> trace</div>
-                            <div className="menu">
-                                <ul>
-                                    <li><NavLink exact to="/" className="decor">Home</NavLink></li>
-                                    <li><NavLink exact to='/portfolio' className="decor">My portfolio</NavLink></li>
-                                    <li><NavLink exact to='/passions' className="decor">My passions</NavLink></li>
-                                    <li><NavLink exact to='/offer' className="decor">Offer</NavLink></li>
-                                    <li><NavLink exact to='/contact' className="decor">Contact</NavLink></li>
-                                </ul>
-                            </div>
-                        </div>
+                        {headerDiv}
 
                         <Route exact path='/' component={Welcome} />
 
-                        <div className="footer">
-                            <div>
-                                <p>Sit with me, take <FontAwesomeIcon icon={faMugHot} /> and catch the moments <FontAwesomeIcon icon={faHeart} /></p>
-                            </div>
-                            <div>
-                                <p><FontAwesomeIcon icon={faCopyright} /> Teresa Ziółkowska 2019 </p>
-                            </div>
-                        </div>
+                        {footerDiv}
                     </div>
                 </>
         );

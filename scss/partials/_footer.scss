@@ -6,6 +6,11 @@
   margin: 3rem 0;
   flex-direction: column;
 
+  .icon_media {
+    font-size: 3rem;
+    padding-right: 1rem;
+  }
+
   :last-child p {
     font-size: 0.75rem;
     color: $color-secondary;

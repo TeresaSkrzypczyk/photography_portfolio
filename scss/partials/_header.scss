@@ -8,6 +8,11 @@
     display: inline-block;
     font-size: 1.5rem;
     padding: 0.25rem 0.5rem;
+
+    &:hover {
+      color: $color-primary;
+    }
+
   }
 
   .menu {
