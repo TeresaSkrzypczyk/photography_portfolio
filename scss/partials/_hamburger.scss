@@ -39,7 +39,7 @@
     }
 
     .mobile-decor:hover {
-       color: darkred;
+       color: $color-primary;
      }
 
     ul {
@@ -47,7 +47,7 @@
     }
 
     .mobile-decor.active {
-      color: darkred;
+      color: $color-primary;
     }
 
   }
