@@ -1,152 +1,177 @@
 export const works = [
     {
-        id: 1,
         src: "../img/wesela8.jpg",
-        width: 3,
-        height: 4
+        thumbnail: "../img/wesela8.jpg",
+        thumbnailWidth: 320,
+        thumbnailHeight: 174,
+        caption: "Wedding Pauliny & Arka"
     },
     {
-        id: 2,
         src: "../img/wesela7.jpg",
-        width: 3,
-        height: 4
+        thumbnail: "../img/wesela7.jpg",
+        thumbnailWidth: 320,
+        thumbnailHeight: 174,
+        caption: "Wedding Pauliny & Arka"
     },
     {
-        id: 3,
         src: "../img/wesela6.jpg",
-        width: 3,
-        height: 4
+        thumbnail: "../img/wesela6.jpg",
+        thumbnailWidth: 320,
+        thumbnailHeight: 174,
+        caption: "Wedding Pauliny & Arka"
     },
     {
-        id: 4,
         src: "../img/wesela5.jpg",
-        width: 3,
-        height: 4
+        thumbnail: "../img/wesela5.jpg",
+        thumbnailWidth: 320,
+        thumbnailHeight: 174,
+        caption: "Wedding Pauliny & Arka"
     },
     {
-        id: 5,
         src: "../img/wesela4.jpg",
-        width: 3,
-        height: 4
+        thumbnail: "../img/wesela4.jpg",
+        thumbnailWidth: 320,
+        thumbnailHeight: 174,
+        caption: "Wedding Pauliny & Arka"
     },
     {
-        id: 6,
         src: "../img/wesela3.jpg",
-        width: 3,
-        height: 4
+        thumbnail: "../img/wesela3.jpg",
+        thumbnailWidth: 320,
+        thumbnailHeight: 174,
+        caption: "Wedding Justyny & Pawła"
     },
     {
-        id: 7,
         src: "../img/wesela2.jpg",
-        width: 3,
-        height: 4
+        thumbnail: "../img/wesela2.jpg",
+        thumbnailWidth: 320,
+        thumbnailHeight: 174,
+        caption: "Wedding Justyny & Pawła"
     },
     {
-        id: 8,
         src: "../img/wesela1.jpg",
-        width: 3,
-        height: 4
+        thumbnail: "../img/wesela1.jpg",
+        thumbnailWidth: 320,
+        thumbnailHeight: 174,
+        caption: "Wedding Justyny & Pawła"
     },
     {
-        id: 9,
         src: "../img/wesela.jpg",
-        width: 3,
-        height: 4
+        thumbnail: "../img/wesela.jpg",
+        thumbnailWidth: 320,
+        thumbnailHeight: 174,
+        caption: "Wedding Justyny & Pawła"
     },
     {
-        id: 10,
         src: "../img/chrzest.jpg",
-        width: 3,
-        height: 4
+        thumbnail: "../img/chrzest.jpg",
+        thumbnailWidth: 320,
+        thumbnailHeight: 174,
+        caption: "Special occasion - christening"
     },
     {
-        id: 11,
         src: "../img/chrzest1.jpg",
-        width: 3,
-        height: 4
+        thumbnail: "../img/chrzest1.jpg",
+        thumbnailWidth: 320,
+        thumbnailHeight: 174,
+        caption: "Special occasion - christening"
     },
     {
-        id: 12,
         src: "../img/chrzest2.jpg",
-        width: 3,
-        height: 4
+        thumbnail: "../img/chrzest2.jpg",
+        thumbnailWidth: 320,
+        thumbnailHeight: 174,
+        caption: "Special occasion - christening"
     },
     {
-        id: 13,
         src: "../img/chrzest3.jpg",
-        width: 3,
-        height: 4
+        thumbnail: "../img/chrzest3.jpg",
+        thumbnailWidth: 320,
+        thumbnailHeight: 174,
+        caption: "Special occasion - christening"
     },
     {
-        id: 14,
         src: "../img/rodzina.jpg",
-        width: 3,
-        height: 4
+        thumbnail: "../img/rodzina.jpg",
+        thumbnailWidth: 320,
+        thumbnailHeight: 174,
+        caption: "Session outdoor - family time"
     },
     {
-        id: 15,
         src: "../img/rodzina1.jpg",
-        width: 3,
-        height: 4
+        thumbnail: "../img/rodzina1.jpg",
+        thumbnailWidth: 320,
+        thumbnailHeight: 174,
+        caption: "Session outdoor - family time"
     },
     {
-        id: 16,
         src: "../img/rodzina2.jpg",
-        width: 3,
-        height: 4
+        thumbnail: "../img/rodzina2.jpg",
+        thumbnailWidth: 320,
+        thumbnailHeight: 174,
+        caption: "Session outdoor - family time"
     },
     {
-        id: 17,
         src: "../img/rodzina3.jpg",
-        width: 3,
-        height: 4
+        thumbnail: "../img/rodzina3.jpg",
+        thumbnailWidth: 320,
+        thumbnailHeight: 174,
+        caption: "Session outdoor - family time"
     },
     {
-        id: 18,
         src: "../img/sluby.jpg",
-        width: 3,
-        height: 4
+        thumbnail: "../img/sluby.jpg",
+        thumbnailWidth: 320,
+        thumbnailHeight: 174,
+        caption: "Wedding outdoor session"
     },
     {
-        id: 19,
         src: "../img/sluby1.jpg",
-        width: 3,
-        height: 4
+        thumbnail: "../img/sluby1.jpg",
+        thumbnailWidth: 320,
+        thumbnailHeight: 174,
+        caption: "Wedding outdoor session"
     },
     {
-        id: 20,
         src: "../img/sluby2.jpg",
-        width: 3,
-        height: 4
+        thumbnail: "../img/sluby2.jpg",
+        thumbnailWidth: 320,
+        thumbnailHeight: 174,
+        caption: "Wedding outdoor session"
     },
     {
-        id: 21,
         src: "../img/sluby3.jpg",
-        width: 3,
-        height: 4
+        thumbnail: "../img/sluby3.jpg",
+        thumbnailWidth: 320,
+        thumbnailHeight: 174,
+        caption: "Wedding outdoor session"
     },
     {
-        id: 22,
         src: "../img/sesje.jpg",
-        width: 3,
-        height: 4
+        thumbnail: "../img/sesje.jpg",
+        thumbnailWidth: 320,
+        thumbnailHeight: 174,
+        caption: "Session outdoor - expecting the birth"
     },
     {
-        id: 23,
         src: "../img/sesje1.jpg",
-        width: 3,
-        height: 4
+        thumbnail: "../img/sesje1.jpg",
+        thumbnailWidth: 320,
+        thumbnailHeight: 174,
+        caption: "Session outdoor - expecting the birth"
     },
     {
-        id: 24,
         src: "../img/sesje2.jpg",
-        width: 3,
-        height: 4
+        thumbnail: "../img/sesje2.jpg",
+        thumbnailWidth: 320,
+        thumbnailHeight: 174,
+        caption: "Session outdoor - expecting the birth"
     },
     {
-        id: 25,
         src: "../img/sesje3.jpg",
-        width: 3,
-        height: 4
+        thumbnail: "../img/sesje3.jpg",
+        thumbnailWidth: 320,
+        thumbnailHeight: 174,
+        caption: "Session outdoor - expecting the birth"
     }
     ];

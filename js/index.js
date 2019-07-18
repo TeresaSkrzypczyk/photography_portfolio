@@ -11,6 +11,7 @@ import ContactForm from './form';
 import Offer from './offer';
 import Welcome from './home';
 import Photo from './passions';
+import Work from './portfolio';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faBars, faPaw, faMugHot, faHeart, faCopyright} from '@fortawesome/free-solid-svg-icons';
 import {faFacebookSquare, faInstagram, faTwitterSquare} from "@fortawesome/free-brands-svg-icons";
@@ -63,6 +64,7 @@ class Portfolio extends Component {
                     {headerDiv}
 
                     <h1>My portfolio</h1>
+                    <Route exact path='/passions' component={Work} />
 
                     {footerDiv}
                 </div>
