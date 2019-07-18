@@ -38,7 +38,7 @@ class Prices extends Component {
 
 function Products({products, onBuy}) {
     return (<>
-        <h2>If you want to catch a moment select your options</h2>
+        <h2>Select the moments you want to catch</h2>
         <ul>
             {products.map(product =>
                 <li key={product.id}> {product.name} {product.detail} {product.price}pln <br />

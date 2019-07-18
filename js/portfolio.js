@@ -8,7 +8,8 @@ function Work() {
         <Gallery
             images={works}
             enableLightbox={true}
-            //maxRows={3}
+            // maxRows={3}
+            margin = {4}
             backdropClosesModal
             // currentImage={3}
             // isOpen={ true}

@@ -26,7 +26,7 @@ export default [
     {
         id: 5,
         name: "Wedding",
-        detail: "mini outdoor on the wedding day",
+        detail: "mini outdoor session on the wedding day",
         price: 150.00
     },
     {
@@ -62,7 +62,7 @@ export default [
     {
         id: 11,
         name: "Album",
-        detail: "special photo album from a session or wediing",
+        detail: "special photo album from a session or wedding",
         price: 200.00
     }
 ];

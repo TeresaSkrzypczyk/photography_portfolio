@@ -11,10 +11,10 @@ class Welcome extends Component {
             <div>
                 <h1 className="text_h1">Hello! Welcome on my page!</h1>
                 <p className="text_p">I'm really glad that you're here!</p>
-                <p className="text_p">This page is a presentation of the beauty of this world, which always touch my heart very deeply.</p>
-                <p className="text_p">Sit comfortable, take your favourite cup of coffee or tee and catch the moments.</p>
-                <p className="text_p">Photography is my passion,but also it's my work,</p>
-                <p className="text_p">so if you're looking for someone to keep special moments for you contact with me!</p><br />
+                <p className="text_p">This page is all about the beauty of this world, which always touches my heart.</p>
+                <p className="text_p">Sit comfortably, take your favourite cup of coffee or tee and catch the moments with me.</p>
+                <p className="text_p">Photography is my passion, but it's also my work,</p>
+                <p className="text_p">so if you're looking for someone to catch your special moments for you, just contact me!</p><br />
             </div>
             <div>
                 <img className="main_photo" src={this.state.img}

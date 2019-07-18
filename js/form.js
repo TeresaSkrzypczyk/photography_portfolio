@@ -58,7 +58,7 @@ class ContactForm extends Component {
                     <input type="text" name="name" value={this.state.name} onChange={e => this.handleChange(e)} /><br />
                 <label>E-mail: </label>
                     <input type="email" name="email" value={this.state.email} onChange={e => this.handleChange(e)} /><br />
-                <label>Select date: </label>
+                <label>Date of the session: </label>
                 <DatePicker name="startDate" selected={this.state.startDate} onChange={e => this.handleChangeDate(e)} />
                 <label>Message: </label>
                     <textarea type="text" name="text" value={this.state.text} onChange={e => this.handleChange(e)} /><br />
