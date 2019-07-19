@@ -32,35 +32,29 @@ export default [
     {
         id: 6,
         name: "Wedding",
-        detail: "wedding documentary version I",
+        detail: "wedding documentary",
         price: 400.00
     },
     {
         id: 7,
-        name: "Wedding",
-        detail: "wedding documentary version II",
-        price: 200.00
+        name: "Weeding",
+        detail: "outdoor session, if you pick me to the weeding day you'll have discount :)",
+        price: 400.00
     },
     {
         id: 8,
         name: "Weeding",
-        detail: "outdoor session version I",
-        price: 800.00
+        detail: "outdoor session version",
+        price: 700.00
     },
     {
         id: 9,
-        name: "Weeding",
-        detail: "outdoor session version I",
-        price: 400.00
-    },
-    {
-        id: 10,
         name: "Special occasion session",
         detail: "outdoor or indoor session",
         price: 500.00
     },
     {
-        id: 11,
+        id: 10,
         name: "Album",
         detail: "special photo album from a session or wedding",
         price: 200.00

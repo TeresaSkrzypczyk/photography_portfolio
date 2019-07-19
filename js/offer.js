@@ -29,23 +29,23 @@ class Prices extends Component {
 
     render() {
         return (
-            <>
+            <div className="central">
                 <Products products={this.state.availableProducts} onBuy={e => this.handleBuyPick(e)}/>
                 <Trash products={this.state.chosen} onBuy={e => this.handleBuyUnsubscribe(e)}/>
-            </>);
+            </div>);
     }
 }
 
 function Products({products, onBuy}) {
-    return (<>
-        <h2>Select the moments you want to catch</h2>
+    return (<div className="left_column">
+        <h3 className="text_h3">Select the moments you want to catch</h3>
         <ul>
             {products.map(product =>
-                <li key={product.id}> {product.name} {product.detail} {product.price}pln <br />
+                <li className="offer_list" key={product.id}> Category: {product.name} <br /> Details: {product.detail}<br /> Price: {product.price}pln <br />
                     <button onClick={e => onBuy(product)}>Pick</button>
             </li>)}
         </ul>
-    </>);
+    </div>);
 }
 
 function Trash({products, onBuy}) {
@@ -53,29 +53,29 @@ function Trash({products, onBuy}) {
     const sum = result.reduce((acc, val) => acc + val, 0);
 
     return (
-        <>
-            {sum > 0 ? <h2>What you've chosen?</h2> : <h2>You haven't selected any option yet</h2>}
+        <div className="right_column">
+            {sum > 0 ? <h3 className="text_h3">You've chosen</h3> : <h3 className="text_h3">You haven't selected any option yet</h3>}
             <ul>
                 {products.map(product =>
-                    <li key={product.id}>{product.name} {product.detail} {product.price}pln <br />
+                    <li className="offer_list" key={product.id}> Category: {product.name} <br /> Details: {product.detail}<br /> Price: {product.price}pln <br />
                         <button onClick={e => onBuy(product)}>Resignation</button>
                     </li>)}
             </ul>
-            {sum > 0 ? <h2>Total: {sum} pln</h2> : null}
-        </>);
+            {sum > 0 ? <h3 className="text_h3">Total: {sum} pln</h3> : null}
+        </div>);
 }
 
 function Information() {
     return (
             <>
-                <h1>Practical Information</h1>
-                <ul>
+                <h3 className="text_h3">Practical Information</h3>
+                <ul className="practical_information">
                     <li>The photographic material will be ready within 20 working days after the photoshoot</li>
                     <li>Additional cost eg. admission tickets are on your side</li>
                     <li>The prices quoted are gross prices</li>
                 </ul>
-                <h2>During the wedding day:</h2>
-                <ul>
+                <h3 className="text_h3">During the wedding day:</h3>
+                <ul className="practical_information">
                     <li>I can travel for the job in the Lower Silesia for no charge, for longer distances, the cost shall be determinated individually</li>
                     <li>If your wedding is more than 100km form Wrocław I require accommodation</li>
                 </ul>

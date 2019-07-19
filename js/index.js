@@ -63,7 +63,7 @@ class Portfolio extends Component {
                 <div className="wrapper">
                     {headerDiv}
 
-                    <h1>My portfolio</h1>
+                    <h1 className="text_h1">My portfolio</h1>
                     <Route exact path='/portfolio' component={Work} /><br />
 
                     {footerDiv}
@@ -102,7 +102,7 @@ class PriceList extends Component {
                 <div className="wrapper">
                     {headerDiv}
 
-                    <h1>Offer</h1>
+                    <h1 className="text_h1">Offer</h1>
                     <Route exact path='/offer' component={Offer} />
 
                     {footerDiv}
@@ -120,7 +120,7 @@ class Contact extends Component {
                 <div className="wrapper">
                     {headerDiv}
 
-                    <h1>Send me a message</h1>
+                    <h1 className="text_h1">Send me a message</h1>
                     <Route exact path='/contact' component={ContactForm} />
 
                     {footerDiv}
