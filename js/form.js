@@ -54,6 +54,7 @@ class ContactForm extends Component {
     render() {
         const form = (
             <form onSubmit={e => this.handleSubmit(e)}>
+                <div className="box">
                 <label>Name: </label>
                     <input type="text" name="name" value={this.state.name} onChange={e => this.handleChange(e)} /><br />
                 <label>E-mail: </label>
@@ -63,13 +64,14 @@ class ContactForm extends Component {
                 <label>Message: </label>
                     <textarea type="text" name="text" value={this.state.text} onChange={e => this.handleChange(e)} /><br />
                 <button type="submit">Send</button>
+                </div>
             </form>
         );
 
         return (
             <div>
-                <ul>{this.state.errors.map((error, index) => <li key={index}>{error}</li>)}</ul>
-                {this.state.send ? <h2 style={{color:"green"}}>Thanks for your message</h2> : form}
+                <ul className="practical_information">{this.state.errors.map((error, index) => <li className="list errors"  key={index}>{error}</li>)}</ul>
+                {this.state.send ? <h3 className="text_h3">Thanks for your message</h3> : form}
             </div>);
     }
 }

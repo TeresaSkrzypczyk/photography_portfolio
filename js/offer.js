@@ -29,7 +29,7 @@ class Prices extends Component {
 
     render() {
         return (
-            <div className="central">
+            <div className="central row">
                 <Products products={this.state.availableProducts} onBuy={e => this.handleBuyPick(e)}/>
                 <Trash products={this.state.chosen} onBuy={e => this.handleBuyUnsubscribe(e)}/>
             </div>);
@@ -37,11 +37,11 @@ class Prices extends Component {
 }
 
 function Products({products, onBuy}) {
-    return (<div className="left_column">
+    return (<div className="left_column col-xs-12 col-sm-6 col-md-6">
         <h3 className="text_h3">Select the moments you want to catch</h3>
         <ul>
             {products.map(product =>
-                <li className="offer_list" key={product.id}> Category: {product.name} <br /> Details: {product.detail}<br /> Price: {product.price}pln <br />
+                <li className="list" key={product.id}> Category: {product.name} <br /> Details: {product.detail}<br /> Price: {product.price}pln <br />
                     <button onClick={e => onBuy(product)}>Pick</button>
             </li>)}
         </ul>
@@ -53,11 +53,11 @@ function Trash({products, onBuy}) {
     const sum = result.reduce((acc, val) => acc + val, 0);
 
     return (
-        <div className="right_column">
+        <div className="right_column col-xs-12 col-sm-6 col-md-6">
             {sum > 0 ? <h3 className="text_h3">You've chosen</h3> : <h3 className="text_h3">You haven't selected any option yet</h3>}
             <ul>
                 {products.map(product =>
-                    <li className="offer_list" key={product.id}> Category: {product.name} <br /> Details: {product.detail}<br /> Price: {product.price}pln <br />
+                    <li className="list" key={product.id}> Category: {product.name} <br /> Details: {product.detail}<br /> Price: {product.price}pln <br />
                         <button onClick={e => onBuy(product)}>Resignation</button>
                     </li>)}
             </ul>
