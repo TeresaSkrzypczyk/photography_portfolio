@@ -28,15 +28,17 @@ const mobileDiv = <div className="mobile-section">
 </div>;
 
 const headerDiv = <div className="header">
-    <div className="logo">Moments <FontAwesomeIcon icon={faPaw} /> trace</div>
-    <div className="menu">
-        <ul>
-            <li><NavLink exact to="/" className="decor">Home</NavLink></li>
-            <li><NavLink exact to='/portfolio' className="decor">My portfolio</NavLink></li>
-            <li><NavLink exact to='/passions' className="decor">My passions</NavLink></li>
-            <li><NavLink exact to='/offer' className="decor">Offer</NavLink></li>
-            <li><NavLink exact to='/contact' className="decor">Contact</NavLink></li>
-        </ul>
+    <div className="wrapper">
+        <div className="logo"><a href="/"> Moments <FontAwesomeIcon icon={faPaw} /> trace</a></div>
+        <div className="menu">
+            <ul>
+                <li><NavLink exact to="/" className="decor">Home</NavLink></li>
+                <li><NavLink exact to='/portfolio' className="decor">My portfolio</NavLink></li>
+                <li><NavLink exact to='/passions' className="decor">My passions</NavLink></li>
+                <li><NavLink exact to='/offer' className="decor">Offer</NavLink></li>
+                <li><NavLink exact to='/contact' className="decor">Contact</NavLink></li>
+            </ul>
+        </div>
     </div>
 </div>;
 

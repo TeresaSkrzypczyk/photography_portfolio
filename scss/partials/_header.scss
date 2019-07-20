@@ -1,16 +1,33 @@
 .header {
-  align-items: center;
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 3rem;
+  //margin-bottom: 3rem;
+  padding: 2rem 0;
+  left: 0;
+  width: 100%;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
 
   .logo {
     display: inline-block;
     font-size: 1.5rem;
     padding: 0.25rem 0.5rem;
+    margin-top: 2rem;
 
-    &:hover {
-      color: $color-primary;
+    @media (min-width: $screen-xs) {
+      margin-top: 0;
+    }
+
+    a {
+      color: $color-text;
+      text-decoration: none;
+
+      &:hover {
+        color: $color-primary;
+      }
+
     }
 
   }
@@ -44,7 +61,7 @@
         &.active {
           background-color: $color-text;
           border-radius: $border-radius;
-          color: $color-background;
+          color: $color-primary;
         }
 
       }
@@ -55,15 +72,19 @@
 
   @media (min-width: $screen-xs) {
     background-color: $color-background;
-    justify-content: space-between;
-    padding: 2rem 0;
-    position: -webkit-sticky;
-    position: sticky;
+    z-index: 7;
     top: 0;
-    //justify-content: space-around;
-    //position: fixed;
+    width: 100%;
+    position: fixed;
+
+    .wrapper {
+      justify-content: space-between;
+    }
+
+    //padding: 2rem 0;
+    //position: -webkit-sticky;
+    //position: sticky;
     //top: 0;
-    //width: 100%;
 
     .menu, ul {
       display: block;

@@ -1,0 +1,47 @@
+div.box {
+  margin:0 auto;
+  top:50px;
+  width:500px;
+}
+
+div.box label {
+  width:100%;
+  display: block;
+  padding:10px 0 10px 0;
+}
+
+div.box label span {
+  display: block;
+  color: $color-text;
+  float:left;
+  width:200px;
+  text-align:right;
+  padding:5px 20px 0 0;
+}
+
+div.box input {
+  padding:10px 10px;
+  width:200px;
+  background: $color-secondary;
+  border-bottom: 1px double #171717;
+  border-top: 1px double #171717;
+  border-left:1px double #333333;
+  border-right:1px double #333333;
+}
+
+div.box textarea {
+  padding:10px 10px;
+  width:200px;
+  background: $color-secondary;
+  border-bottom: 1px double #171717;
+  border-top: 1px double #171717;
+  border-left:1px double #333333;
+  border-right:1px double #333333;
+  margin-bottom: 2rem;
+}
+
+div.box button	{
+  display: block;
+  margin: 0 auto;
+  width: 20%;
+}
