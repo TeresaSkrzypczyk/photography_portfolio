@@ -2,10 +2,23 @@ import React, {Component} from "react";
 import ReactDOM from "react-dom";
 
 class Welcome extends Component {
-    state = {
-        img: "../img/me.jpg",
-    };
+    // state = {
+    //     img: "../img/me.jpg",
+    // };
 
+// <img className="main_photo" src={this.state.img}
+// onMouseEnter={() => {
+//     this.setState({
+//         img: "../img/mecolor.jpg"
+//     })
+// }}
+//
+// onMouseOut={() => {
+//     this.setState({
+//         img: "../img/me.jpg"
+//     })
+// }}
+// />
     render() {
         return (<>
             <div>
@@ -16,23 +29,11 @@ class Welcome extends Component {
                 <p className="text_p">Photography is my passion, but it's also my work,</p>
                 <p className="text_p">so if you're looking for someone to catch your special moments for you, just contact me!</p><br />
             </div>
-            <div>
-                <img className="main_photo" src={this.state.img}
-                     onMouseEnter={() => {
-                         this.setState({
-                             img: "../img/mecolor.jpg"
-                         })
-                     }}
-
-                     onMouseOut={() => {
-                         this.setState({
-                             img: "../img/me.jpg"
-                         })
-                     }}
-                />
+            <div className="main_photo">
             </div>
         </>)
     }
 }
 
 export default Welcome;
+
