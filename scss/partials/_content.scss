@@ -17,7 +17,7 @@
 }
 
 .text_h1 {
-  padding-top: 6rem;
+  padding-top: 7rem;
   padding-bottom: 2rem;
 }
 
@@ -56,8 +56,14 @@
 
 .list {
   list-style-type: none;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
   text-align: center;
+  border-bottom: dotted 2px $color-secondary;
+
+  .btn {
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
 }
 
 .errors {
