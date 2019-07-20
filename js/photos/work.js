@@ -1,65 +1,65 @@
 export const wedding = [
     {
         src: "../img/wesela8.jpg",
-        thumbnail: "../img/wesela8.jpg",
-        thumbnailWidth: 700,
-        thumbnailHeight: 500,
+        thumbnail: "../img/wesela8min.jpg",
+        thumbnailWidth: 1000,
+        thumbnailHeight: 700,
         caption: "Wedding Pauliny & Arka"
     },
     {
         src: "../img/wesela7.jpg",
-        thumbnail: "../img/wesela7.jpg",
-        thumbnailWidth: 700,
-        thumbnailHeight: 500,
+        thumbnail: "../img/wesela7min.jpg",
+        thumbnailWidth: 1000,
+        thumbnailHeight: 700,
         caption: "Wedding Pauliny & Arka"
     },
     {
         src: "../img/wesela6.jpg",
-        thumbnail: "../img/wesela6.jpg",
-        thumbnailWidth: 400,
-        thumbnailHeight: 500,
+        thumbnail: "../img/wesela6min.jpg",
+        thumbnailWidth: 500,
+        thumbnailHeight: 700,
         caption: "Wedding Pauliny & Arka"
     },
     {
         src: "../img/wesela5.jpg",
-        thumbnail: "../img/wesela5.jpg",
-        thumbnailWidth: 700,
-        thumbnailHeight: 500,
+        thumbnail: "../img/wesela5min.jpg",
+        thumbnailWidth: 1000,
+        thumbnailHeight: 700,
         caption: "Wedding Pauliny & Arka"
     },
     {
         src: "../img/wesela4.jpg",
-        thumbnail: "../img/wesela4.jpg",
-        thumbnailWidth: 700,
-        thumbnailHeight: 500,
+        thumbnail: "../img/wesela4min.jpg",
+        thumbnailWidth: 1000,
+        thumbnailHeight: 700,
         caption: "Wedding Pauliny & Arka"
     },
     {
         src: "../img/wesela3.jpg",
-        thumbnail: "../img/wesela3.jpg",
-        thumbnailWidth: 400,
-        thumbnailHeight: 500,
+        thumbnail: "../img/wesela3min.jpg",
+        thumbnailWidth: 500,
+        thumbnailHeight: 700,
         caption: "Wedding Justyny & Pawła"
     },
     {
         src: "../img/wesela2.jpg",
-        thumbnail: "../img/wesela2.jpg",
-        thumbnailWidth: 700,
-        thumbnailHeight: 500,
+        thumbnail: "../img/wesela2min.jpg",
+        thumbnailWidth: 1000,
+        thumbnailHeight: 700,
         caption: "Wedding Justyny & Pawła"
     },
     {
         src: "../img/wesela1.jpg",
-        thumbnail: "../img/wesela1.jpg",
-        thumbnailWidth: 400,
-        thumbnailHeight: 500,
+        thumbnail: "../img/wesela1min.jpg",
+        thumbnailWidth: 500,
+        thumbnailHeight: 700,
         caption: "Wedding Justyny & Pawła"
     },
     {
         src: "../img/wesela.jpg",
-        thumbnail: "../img/wesela.jpg",
-        thumbnailWidth: 400,
-        thumbnailHeight: 500,
+        thumbnail: "../img/weselamin.jpg",
+        thumbnailWidth: 500,
+        thumbnailHeight: 700,
         caption: "Wedding Justyny & Pawła"
     }
     ];
@@ -67,30 +67,30 @@ export const wedding = [
 export const baptism = [
     {
         src: "../img/chrzest.jpg",
-        thumbnail: "../img/chrzest.jpg",
-        thumbnailWidth: 700,
-        thumbnailHeight: 500,
+        thumbnail: "../img/chrzestmin.jpg",
+        thumbnailWidth: 1000,
+        thumbnailHeight: 700,
         caption: "Special occasion - baptism"
     },
     {
         src: "../img/chrzest1.jpg",
-        thumbnail: "../img/chrzest1.jpg",
-        thumbnailWidth: 700,
-        thumbnailHeight: 500,
+        thumbnail: "../img/chrzest1min.jpg",
+        thumbnailWidth: 1000,
+        thumbnailHeight: 700,
         caption: "Special occasion - baptism"
     },
     {
         src: "../img/chrzest2.jpg",
-        thumbnail: "../img/chrzest2.jpg",
-        thumbnailWidth: 700,
-        thumbnailHeight: 500,
+        thumbnail: "../img/chrzest2min.jpg",
+        thumbnailWidth: 1000,
+        thumbnailHeight: 700,
         caption: "Special occasion - baptism"
     },
     {
         src: "../img/chrzest3.jpg",
-        thumbnail: "../img/chrzest3.jpg",
-        thumbnailWidth: 700,
-        thumbnailHeight: 500,
+        thumbnail: "../img/chrzest3min.jpg",
+        thumbnailWidth: 1000,
+        thumbnailHeight: 700,
         caption: "Special occasion - baptism"
     }
     ];
@@ -98,30 +98,30 @@ export const baptism = [
 export const family = [
     {
         src: "../img/rodzina.jpg",
-        thumbnail: "../img/rodzina.jpg",
-        thumbnailWidth: 700,
-        thumbnailHeight: 500,
+        thumbnail: "../img/rodzinamin.jpg",
+        thumbnailWidth: 1000,
+        thumbnailHeight: 700,
         caption: "Session outdoor - family time"
     },
     {
         src: "../img/rodzina1.jpg",
-        thumbnail: "../img/rodzina1.jpg",
-        thumbnailWidth: 700,
-        thumbnailHeight: 500,
+        thumbnail: "../img/rodzina1min.jpg",
+        thumbnailWidth: 1000,
+        thumbnailHeight: 700,
         caption: "Session outdoor - family time"
     },
     {
         src: "../img/rodzina2.jpg",
-        thumbnail: "../img/rodzina2.jpg",
-        thumbnailWidth: 700,
-        thumbnailHeight: 500,
+        thumbnail: "../img/rodzina2min.jpg",
+        thumbnailWidth: 1000,
+        thumbnailHeight: 700,
         caption: "Session outdoor - family time"
     },
     {
         src: "../img/rodzina3.jpg",
-        thumbnail: "../img/rodzina3.jpg",
-        thumbnailWidth: 700,
-        thumbnailHeight: 500,
+        thumbnail: "../img/rodzina3min.jpg",
+        thumbnailWidth: 1000,
+        thumbnailHeight: 700,
         caption: "Session outdoor - family time"
     }
     ];
@@ -129,30 +129,30 @@ export const family = [
 export const wedding_outdoor = [
     {
         src: "../img/sluby.jpg",
-        thumbnail: "../img/sluby.jpg",
-        thumbnailWidth: 700,
-        thumbnailHeight: 500,
+        thumbnail: "../img/slubymin.jpg",
+        thumbnailWidth: 1000,
+        thumbnailHeight: 700,
         caption: "Wedding outdoor session - Paulina & Arek"
     },
     {
         src: "../img/sluby1.jpg",
-        thumbnail: "../img/sluby1.jpg",
-        thumbnailWidth: 400,
-        thumbnailHeight: 500,
+        thumbnail: "../img/sluby1min.jpg",
+        thumbnailWidth: 500,
+        thumbnailHeight: 700,
         caption: "Wedding outdoor session - Joanna & Jakub"
     },
     {
         src: "../img/sluby2.jpg",
-        thumbnail: "../img/sluby2.jpg",
-        thumbnailWidth: 700,
-        thumbnailHeight: 500,
+        thumbnail: "../img/sluby2min.jpg",
+        thumbnailWidth: 1000,
+        thumbnailHeight: 700,
         caption: "Wedding outdoor session - Joanna & Jakub"
     },
     {
         src: "../img/sluby3.jpg",
-        thumbnail: "../img/sluby3.jpg",
-        thumbnailWidth: 400,
-        thumbnailHeight: 500,
+        thumbnail: "../img/sluby3min.jpg",
+        thumbnailWidth: 500,
+        thumbnailHeight: 700,
         caption: "Wedding outdoor session Bogusia & Bartek"
     }
     ];
@@ -160,30 +160,30 @@ export const wedding_outdoor = [
 export const pregnancy = [
     {
         src: "../img/sesje.jpg",
-        thumbnail: "../img/sesje.jpg",
-        thumbnailWidth: 400,
-        thumbnailHeight: 500,
+        thumbnail: "../img/sesjemin.jpg",
+        thumbnailWidth: 500,
+        thumbnailHeight: 700,
         caption: "Session outdoor - pregnancy"
     },
     {
         src: "../img/sesje1.jpg",
-        thumbnail: "../img/sesje1.jpg",
-        thumbnailWidth: 400,
-        thumbnailHeight: 500,
+        thumbnail: "../img/sesje1min.jpg",
+        thumbnailWidth: 500,
+        thumbnailHeight: 700,
         caption: "Session outdoor - pregnancy"
     },
     {
         src: "../img/sesje2.jpg",
-        thumbnail: "../img/sesje2.jpg",
-        thumbnailWidth: 700,
-        thumbnailHeight: 500,
+        thumbnail: "../img/sesje2min.jpg",
+        thumbnailWidth: 1000,
+        thumbnailHeight: 700,
         caption: "Session outdoor - pregnancy"
     },
     {
         src: "../img/sesje3.jpg",
-        thumbnail: "../img/sesje3.jpg",
-        thumbnailWidth: 400,
-        thumbnailHeight: 500,
+        thumbnail: "../img/sesje3min.jpg",
+        thumbnailWidth: 500,
+        thumbnailHeight: 700,
         caption: "Session outdoor - pregnancy"
     }
     ];
