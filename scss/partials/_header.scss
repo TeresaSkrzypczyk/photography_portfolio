@@ -54,7 +54,16 @@
   }
 
   @media (min-width: $screen-xs) {
+    background-color: $color-background;
     justify-content: space-between;
+    padding: 2rem 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    //justify-content: space-around;
+    //position: fixed;
+    //top: 0;
+    //width: 100%;
 
     .menu, ul {
       display: block;

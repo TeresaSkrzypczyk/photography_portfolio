@@ -6,6 +6,10 @@
   margin: 3rem 0;
   flex-direction: column;
 
+  a {
+    color: $color-text;
+  }
+
   .icon_media {
     font-size: 3rem;
     padding-right: 1rem;

@@ -45,9 +45,9 @@ const footerDiv = <div className="footer">
         <p>Sit with me, take <FontAwesomeIcon icon={faMugHot} /> and catch the moments <FontAwesomeIcon icon={faHeart} /></p>
     </div>
     <div>
-        <FontAwesomeIcon icon={faInstagram} className="icon_media"/>
-        <FontAwesomeIcon icon={faTwitterSquare} className="icon_media"/>
-        <FontAwesomeIcon icon={faFacebookSquare} className="icon_media"/>
+        <a href="https://www.instagram.com/te.skrzypczyk/" target="_blank"><FontAwesomeIcon icon={faInstagram} className="icon_media"/></a>
+        <a href="https://twitter.com/" target="_blank"><FontAwesomeIcon icon={faTwitterSquare} className="icon_media"/></a>
+        <a href="https://www.facebook.com/tereska.skrzypczyk" target="_blank"><FontAwesomeIcon icon={faFacebookSquare} className="icon_media"/></a>
     </div>
     <div>
         <p><FontAwesomeIcon icon={faCopyright} /> Teresa Ziółkowska 2019 </p>
@@ -59,9 +59,8 @@ class Portfolio extends Component {
     render() {
         return (
             <>
-                {mobileDiv}
                 <div className="wrapper">
-                    {headerDiv}
+                    {mobileDiv}{headerDiv}
 
                     <h1 className="text_h1">My portfolio</h1>
                     <Route exact path='/portfolio' component={Work} /><br />
@@ -77,9 +76,8 @@ class Passions extends Component {
     render() {
         return (
             <>
-                {mobileDiv}
                 <div className="wrapper">
-                    {headerDiv}
+                    {mobileDiv}{headerDiv}
 
                     <h1 className="text_h1">My passions</h1>
                     <h3 className="text_h3">City, Landscape, Nature, People</h3>
@@ -98,9 +96,8 @@ class PriceList extends Component {
     render() {
         return (
             <>
-                {mobileDiv}
                 <div className="wrapper">
-                    {headerDiv}
+                    {mobileDiv}{headerDiv}
 
                     <h1 className="text_h1">Offer</h1>
                     <Route exact path='/offer' component={Offer} />
@@ -116,9 +113,8 @@ class Contact extends Component {
     render() {
         return (
             <>
-                {mobileDiv}
                 <div className="wrapper">
-                    {headerDiv}
+                    {mobileDiv}{headerDiv}
 
                     <h1 className="text_h1">Send me a message</h1>
                     <Route exact path='/contact' component={ContactForm} />
@@ -134,9 +130,8 @@ class Main extends Component{
     render() {
         return (
                 <>
-                    {mobileDiv}
                     <div className="wrapper">
-                        {headerDiv}
+                        {mobileDiv}{headerDiv}
 
                         <Route exact path='/' component={Welcome} />
 

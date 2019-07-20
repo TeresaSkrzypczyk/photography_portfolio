@@ -42,7 +42,7 @@ function Products({products, onBuy}) {
         <ul>
             {products.map(product =>
                 <li className="list" key={product.id}> Category: {product.name} <br /> Details: {product.detail}<br /> Price: {product.price}pln <br />
-                    <button onClick={e => onBuy(product)}>Pick</button>
+                    <button className="btn" onClick={e => onBuy(product)}>Select</button>
             </li>)}
         </ul>
     </div>);
@@ -58,7 +58,7 @@ function Trash({products, onBuy}) {
             <ul>
                 {products.map(product =>
                     <li className="list" key={product.id}> Category: {product.name} <br /> Details: {product.detail}<br /> Price: {product.price}pln <br />
-                        <button onClick={e => onBuy(product)}>Resignation</button>
+                        <button className="btn" onClick={e => onBuy(product)}>Delete</button>
                     </li>)}
             </ul>
             {sum > 0 ? <h3 className="text_h3">Total: {sum} pln</h3> : null}
