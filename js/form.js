@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import ReactDOM from "react-dom";
 import DatePicker from 'react-datepicker';
-//import "react-datepicker/dist/react-datepicker.css";
+import "react-datepicker/dist/react-datepicker.css";
 
 class ContactForm extends Component {
     constructor(props) {
