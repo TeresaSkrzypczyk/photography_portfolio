@@ -6,21 +6,9 @@
 }
 
 .text_h1 {
-  padding-top: 0;
+  padding-top: 6rem;
   padding-bottom: 2rem;
 }
-
-@media (min-width: $screen-xs) {
-  .text_h1 {
-    padding-top: 6rem;
-    padding-bottom: 2rem;
-  }
-}
-
-//.text_h1 {
-//  padding-top: 6rem;
-//  padding-bottom: 2rem;
-//}
 
 .text_h3 {
   padding: 1rem 0;

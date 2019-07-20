@@ -1,8 +1,8 @@
 .header {
-  //margin-bottom: 3rem;
   padding: 2rem 0;
   left: 0;
   width: 100%;
+  display: none;
 
   .wrapper {
     display: flex;
@@ -26,6 +26,8 @@
 
       &:hover {
         color: $color-primary;
+        cursor: pointer;
+        transition: $transition-primary;
       }
 
     }
@@ -76,6 +78,7 @@
     top: 0;
     width: 100%;
     position: fixed;
+    display: block;
 
     .wrapper {
       justify-content: space-between;

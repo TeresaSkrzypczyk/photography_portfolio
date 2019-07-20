@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 
 class Welcome extends Component {
     state = {
-        img: "../img/me.jpg"
+        img: "../img/me.jpg",
     };
 
     render() {

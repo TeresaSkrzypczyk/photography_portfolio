@@ -25,6 +25,7 @@ const mobileDiv = <div className="mobile-section">
         <li><NavLink exact to='/offer' className="mobile-decor">Offer</NavLink></li>
         <li><NavLink exact to='/contact' className="mobile-decor">Contact</NavLink></li>
     </ul>
+    <a href="/" className="mobile-logo"> Moments <FontAwesomeIcon icon={faPaw} /> trace</a>
 </div>;
 
 const headerDiv = <div className="header">
