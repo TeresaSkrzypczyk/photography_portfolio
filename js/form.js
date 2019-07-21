@@ -67,7 +67,7 @@ class ContactForm extends Component {
 
         return (
             <div>
-                <ul className="practical_information">{this.state.errors.map((error, index) => <li className="list errors"  key={index}>{error}</li>)}</ul>
+                <ul className="errors_information">{this.state.errors.map((error, index) => <li className="errors"  key={index}>{error}</li>)}</ul>
                 {this.state.send ? <h3 className="text_h3">Thanks for your message</h3> : form}
             </div>);
     }

@@ -1,5 +1,5 @@
 .header {
-  padding: 2rem 0;
+  padding: 1rem 0;
   left: 0;
   width: 100%;
   display: none;
@@ -74,7 +74,7 @@
 
   @media (min-width: $screen-xs) {
     background-color: $color-background;
-    z-index: 7;
+    z-index: 1;
     top: 0;
     width: 100%;
     position: fixed;

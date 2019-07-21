@@ -1,24 +1,38 @@
 .main_photo {
-  background-image: url("/img/me.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;width: 30vw;
-  height: 80vh;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
+  position: relative;
+  width: auto;
 
-  &:hover {
-    background-image: url("/img/mecolor.jpg");
-    transition: $transition-primary;
+  .color_photo {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .monochromatic_photo {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+
+      &:hover  {
+      transition: $transition-primary;
+      opacity: 0;
+    }
+
   }
 
 }
 
 .text_h1 {
-  padding-top: 7rem;
+  padding-top: 6rem;
   padding-bottom: 2rem;
+  text-align: center;
+
+  @media (min-width: $screen-xs) {
+    text-align: left;
+  }
+
 }
 
 .text_h3 {
@@ -31,6 +45,7 @@
 .text_p {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .btn {
@@ -67,12 +82,21 @@
 }
 
 .errors {
-  color: $color-primary
+  color: $color-primary;
+  list-style-type: none;
+  text-align: center;
+}
+
+.errors_information {
+  li:last-child {
+    padding-bottom: 1rem;
+  }
 }
 
 .practical_information {
   padding-left: 2rem;
 }
+
 
 
 
