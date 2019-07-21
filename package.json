@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/TeresaSkrzypczyk/photography_portfolio",
   "devDependencies": {
+  },
+  "dependencies": {
     "@babel/core": "^7.4.0",
     "@babel/plugin-proposal-class-properties": "^7.4.0",
     "@babel/preset-env": "^7.4.1",
@@ -41,9 +43,7 @@
     "url-loader": "^2.0.1",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
-    "webpack-dev-server": "^3.2.1"
-  },
-  "dependencies": {
+    "webpack-dev-server": "^3.2.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.19",
     "@fortawesome/free-brands-svg-icons": "^5.9.0",
     "@fortawesome/free-regular-svg-icons": "^5.9.0",
