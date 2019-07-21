@@ -45,7 +45,7 @@ const headerDiv = <div className="header">
 
 const footerDiv = <div className="footer">
     <div>
-        <p>Sit with me, take <FontAwesomeIcon icon={faMugHot} /> and catch the moments <FontAwesomeIcon icon={faHeart} /></p>
+        <p className="footer_text">Sit with me, take <FontAwesomeIcon icon={faMugHot} /> and catch the moments <FontAwesomeIcon icon={faHeart} /></p>
     </div>
     <div>
         <a href="https://www.instagram.com/te.skrzypczyk/" target="_blank"><FontAwesomeIcon icon={faInstagram} className="icon_media"/></a>
@@ -84,8 +84,7 @@ class Passions extends Component {
 
                     <h1 className="text_h1">My passions</h1>
                     <h3 className="text_h3">City, Landscape, Nature, People</h3>
-                    <p className="text_p">We're surrounded by a beautiful world</p>
-                    <p className="text_p">Sometimes it's just enough to stop and open your eyes</p>
+                    <p className="text_p">We're surrounded by a beautiful world.<br />Sometimes it's just enough to stop and open your eyes.</p>
                     <br /><Route exact path='/passions' component={Photo} />
 
                     {footerDiv}

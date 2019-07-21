@@ -21,4 +21,13 @@
     padding-top: 1rem;
   }
 
+  .footer_text {
+
+    &:hover {
+      color: $color-primary;
+      transition: $transition-primary;
+    }
+
+  }
+
 }

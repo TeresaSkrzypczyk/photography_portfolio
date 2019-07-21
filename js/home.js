@@ -2,23 +2,6 @@ import React, {Component} from "react";
 import ReactDOM from "react-dom";
 
 class Welcome extends Component {
-    // state = {
-    //     img: "../img/me.jpg",
-    // };
-
-// <img className="main_photo" src={this.state.img}
-// onMouseEnter={() => {
-//     this.setState({
-//         img: "../img/mecolor.jpg"
-//     })
-// }}
-//
-// onMouseOut={() => {
-//     this.setState({
-//         img: "../img/me.jpg"
-//     })
-// }}
-// />
     render() {
         return (<>
             <div>

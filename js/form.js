@@ -53,7 +53,7 @@ class ContactForm extends Component {
 
     render() {
         const form = (
-            <form onSubmit={e => this.handleSubmit(e)}>
+            <form onSubmit={e => this.handleSubmit(e)} method="POST">
                 <div className="box">
                     <label><span>Name:</span><input type="text" name="name" value={this.state.name} onChange={e => this.handleChange(e)} /><br /></label>
                     <label><span>E-mail:</span><input type="email" name="email" value={this.state.email} onChange={e => this.handleChange(e)} /><br /></label>
