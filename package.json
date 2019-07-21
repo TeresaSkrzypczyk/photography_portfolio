@@ -4,11 +4,11 @@
   "description": "final project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1\"",
-    "start": "webpack-dev-server --hot -d\"",
-    "build": "webpack -p\"",
+    "test": "echo \"Error: no test specified\" && \"exit 1\"",
+    "start": "webpack-dev-server --hot -d",
+    "build": "webpack -p",
     "build-css": "node-sass --include-path scss scss/main.scss   css/main.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\" ",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\" "
   },
   "repository": {
     "type": "git",
