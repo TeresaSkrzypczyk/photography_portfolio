@@ -15,7 +15,6 @@ import Work from './portfolio';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faBars, faPaw, faMugHot, faHeart, faCopyright} from '@fortawesome/free-solid-svg-icons';
 import {faFacebookSquare, faInstagram, faTwitterSquare} from "@fortawesome/free-brands-svg-icons";
-import Favicon from 'react-favicon';
 
 const mobileDiv = <div className="mobile-section">
     <button className="mobile-button"><FontAwesomeIcon icon={faBars} /></button>
@@ -162,9 +161,4 @@ class App extends Component {
     }
 }
 
-ReactDOM.render(
-        <>
-            <Favicon url="/path/to/favicon.ico" />
-            <App />
-        </>,
-    document.getElementById("app"));
+ReactDOM.render(<App />, document.getElementById("app"));
