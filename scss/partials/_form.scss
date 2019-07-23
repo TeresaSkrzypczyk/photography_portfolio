@@ -1,21 +1,44 @@
+.general {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+
+  @media (min-width: $screen-xs) {
+    width: 50%;
+  }
+
+}
+
 div.box {
-  margin:0 auto;
+  margin: 0 auto;
   top:50px;
 }
 
 div.box label {
-  width:100%;
   display: block;
   padding:10px 0 10px 0;
+
+  .datepicker {
+  width: 95px;
+  }
+
+  @media (min-width: $screen-xs) {
+    width: 125%;
+  }
+
 }
 
 div.box label span {
   display: block;
   color: $color-text;
   float:left;
-  width:200px;
   text-align:right;
   padding:5px 20px 0 0;
+
+  @media (min-width: $screen-xs) {
+  width:200px;
+  }
+
 }
 
 div.box input {
@@ -42,5 +65,4 @@ div.box textarea {
 div.box button	{
   display: block;
   margin: 0 auto;
-  width: 20%;
 }

@@ -57,7 +57,7 @@ class ContactForm extends Component {
                 <div className="box">
                     <label><span>Name:</span><input type="text" name="name" value={this.state.name} onChange={e => this.handleChange(e)} /><br /></label>
                     <label><span>E-mail:</span><input type="email" name="email" value={this.state.email} onChange={e => this.handleChange(e)} /><br /></label>
-                    <label><span>Date of the session:</span><DatePicker name="startDate" selected={this.state.startDate} onChange={e => this.handleChangeDate(e)} /></label>
+                    <label><span>Date of the session:</span><DatePicker className="datepicker" name="startDate" selected={this.state.startDate} onChange={e => this.handleChangeDate(e)} /></label>
                     <label><span>Message:</span><textarea type="text" name="text" value={this.state.text} onChange={e => this.handleChange(e)} /><br /></label>
 
                 <button className="btn" type="submit">Send</button>
@@ -66,7 +66,7 @@ class ContactForm extends Component {
         );
 
         return (
-            <div>
+            <div className="general">
                 <ul className="errors_information">{this.state.errors.map((error, index) => <li className="errors"  key={index}>{error}</li>)}</ul>
                 {this.state.send ? <h3 className="text_h3">Thanks for your message</h3> : form}
             </div>);
