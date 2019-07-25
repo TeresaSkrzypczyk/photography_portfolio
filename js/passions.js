@@ -20,6 +20,9 @@ function Photo () {
 
     return (
         <div>
+            <h1 className="text_h1">My passions</h1>
+            <h3 className="text_h3">City, Landscape, Nature, People</h3>
+            <p className="text_p">We're surrounded by a beautiful world.<br />Sometimes it's just enough to stop and open your eyes.</p>
             <Gallery photos={photos} onClick={openLightbox} />
             <ModalGateway>
                 {viewerIsOpen ? (

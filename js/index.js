@@ -15,6 +15,8 @@ import Work from './portfolio';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faBars, faPaw, faMugHot, faHeart, faCopyright} from '@fortawesome/free-solid-svg-icons';
 import {faFacebookSquare, faInstagram, faTwitterSquare} from "@fortawesome/free-brands-svg-icons";
+import { I18nextProvider } from "react-i18next";
+import i18n from "./i18n";
 
 const mobileDiv = <div className="mobile-section">
     <button className="mobile-button"><FontAwesomeIcon icon={faBars} /></button>
@@ -82,9 +84,6 @@ class Passions extends Component {
                 <div className="wrapper">
                     {mobileDiv}{headerDiv}
 
-                    <h1 className="text_h1">My passions</h1>
-                    <h3 className="text_h3">City, Landscape, Nature, People</h3>
-                    <p className="text_p">We're surrounded by a beautiful world.<br />Sometimes it's just enough to stop and open your eyes.</p>
                     <br /><Route exact path='/passions' component={Photo} />
 
                     {footerDiv}
@@ -161,4 +160,4 @@ class App extends Component {
     }
 }
 
-ReactDOM.render(<App />, document.getElementById("app"));
+ReactDOM.render( <I18nextProvider i18n={i18n}><App /></I18nextProvider>, document.getElementById("app"));

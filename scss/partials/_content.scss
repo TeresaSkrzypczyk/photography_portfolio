@@ -1,4 +1,5 @@
 .main_photo {
+  margin-top: 2rem;
   position: relative;
   width: auto;
 
@@ -35,6 +36,15 @@
 
 }
 
+.text_h1_home {
+  padding: 2rem 0;
+  text-align: center;
+
+  @media (min-width: $screen-xs) {
+    text-align: left;
+  }
+}
+
 .text_h3 {
   padding: 1rem 0;
   display: flex;
@@ -46,6 +56,7 @@
   display: flex;
   justify-content: center;
   text-align: center;
+  padding-bottom: 0.5rem;
 }
 
 .btn {
