@@ -6,7 +6,6 @@ import Radio from "@material-ui/core/Radio";
 import RadioGroup from "@material-ui/core/RadioGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormControl from "@material-ui/core/FormControl";
-import SimpleAppBar from './bar';
 
 class Welcome extends Component {
     constructor(props) {
@@ -41,18 +40,13 @@ class Welcome extends Component {
         const { t, i18n } = this.props;
 
         return (<>
-            <div>
-                <SimpleAppBar />
-
-                <div>
+            <div className="app-bar">
                     <FormControl component="fieldset" >
                         <RadioGroup aria-label="Gender" name="gender1" value={this.state.value} onChange={this.handleChange}>
                             <FormControlLabel value="en" control={<Radio />} label="English" />
                             <FormControlLabel value="pl" control={<Radio />} label="Polish" />
                         </RadioGroup>
                     </FormControl>
-                </div>
-
             </div>
 
             <div>
