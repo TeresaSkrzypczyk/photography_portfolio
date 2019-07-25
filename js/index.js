@@ -17,60 +17,35 @@ import {faBars, faPaw, faMugHot, faHeart, faCopyright} from '@fortawesome/free-s
 import {faFacebookSquare, faInstagram, faTwitterSquare} from "@fortawesome/free-brands-svg-icons";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./i18n";
+import MobileDiv from "./mobile";
+import HeaderDiv from "./header";
+import FooterDiv from "./footer";
 
-const mobileDiv = <div className="mobile-section">
-    <button className="mobile-button"><FontAwesomeIcon icon={faBars} /></button>
-    <ul className="mobile-menu">
-        <li><NavLink exact to="/" className="mobile-decor">Home</NavLink></li>
-        <li><NavLink exact to='/portfolio' className="mobile-decor">My portfolio</NavLink></li>
-        <li><NavLink exact to='/passions' className="mobile-decor">My passions</NavLink></li>
-        <li><NavLink exact to='/offer' className="mobile-decor">Offer</NavLink></li>
-        <li><NavLink exact to='/contact' className="mobile-decor">Contact</NavLink></li>
-    </ul>
-    <a href="/" className="mobile-logo"> Moments <FontAwesomeIcon icon={faPaw} /> trace</a>
-</div>;
-
-const headerDiv = <div className="header">
-    <div className="wrapper">
-        <div className="logo"><a href="/"> Moments <FontAwesomeIcon icon={faPaw} /> trace</a></div>
-        <div className="menu">
-            <ul>
-                <li><NavLink exact to="/" className="decor">Home</NavLink></li>
-                <li><NavLink exact to='/portfolio' className="decor">My portfolio</NavLink></li>
-                <li><NavLink exact to='/passions' className="decor">My passions</NavLink></li>
-                <li><NavLink exact to='/offer' className="decor">Offer</NavLink></li>
-                <li><NavLink exact to='/contact' className="decor">Contact</NavLink></li>
-            </ul>
-        </div>
-    </div>
-</div>;
-
-const footerDiv = <div className="footer">
-    <div>
-        <p className="footer_text">Sit with me, take <FontAwesomeIcon icon={faMugHot} /> and catch the moments <FontAwesomeIcon icon={faHeart} /></p>
-    </div>
-    <div>
-        <a href="https://www.instagram.com/te.skrzypczyk/" target="_blank"><FontAwesomeIcon icon={faInstagram} className="icon_media"/></a>
-        <a href="https://twitter.com/" target="_blank"><FontAwesomeIcon icon={faTwitterSquare} className="icon_media"/></a>
-        <a href="https://www.facebook.com/tereska.skrzypczyk" target="_blank"><FontAwesomeIcon icon={faFacebookSquare} className="icon_media"/></a>
-    </div>
-    <div>
-        <p><FontAwesomeIcon icon={faCopyright} /> Teresa Ziółkowska 2019 </p>
-    </div>
-</div>;
-
+// const footerDiv = <div className="footer">
+//     <div>
+//         <p className="footer_text">Sit with me, take <FontAwesomeIcon icon={faMugHot} /> and catch the moments <FontAwesomeIcon icon={faHeart} /></p>
+//     </div>
+//     <div>
+//         <a href="https://www.instagram.com/te.skrzypczyk/" target="_blank"><FontAwesomeIcon icon={faInstagram} className="icon_media"/></a>
+//         <a href="https://twitter.com/" target="_blank"><FontAwesomeIcon icon={faTwitterSquare} className="icon_media"/></a>
+//         <a href="https://www.facebook.com/tereska.skrzypczyk" target="_blank"><FontAwesomeIcon icon={faFacebookSquare} className="icon_media"/></a>
+//     </div>
+//     <div>
+//         <p><FontAwesomeIcon icon={faCopyright} /> Teresa Ziółkowska 2019 </p>
+//     </div>
+// </div>;
 
 class Portfolio extends Component {
     render() {
         return (
             <>
                 <div className="wrapper">
-                    {mobileDiv}{headerDiv}
+                    <MobileDiv /><HeaderDiv />
 
                     <h1 className="text_h1">My portfolio</h1>
                     <Route exact path='/portfolio' component={Work} /><br />
 
-                    {footerDiv}
+                    <FooterDiv />
                 </div>
             </>
         );
@@ -82,11 +57,11 @@ class Passions extends Component {
         return (
             <>
                 <div className="wrapper">
-                    {mobileDiv}{headerDiv}
+                    <MobileDiv /><HeaderDiv />
 
                     <br /><Route exact path='/passions' component={Photo} />
 
-                    {footerDiv}
+                    <FooterDiv />
                 </div>
             </>
         );
@@ -98,12 +73,12 @@ class PriceList extends Component {
         return (
             <>
                 <div className="wrapper">
-                    {mobileDiv}{headerDiv}
+                    <MobileDiv /><HeaderDiv />
 
                     <h1 className="text_h1">Offer</h1>
                     <Route exact path='/offer' component={Offer} />
 
-                    {footerDiv}
+                    <FooterDiv />
                 </div>
             </>
         );
@@ -115,12 +90,12 @@ class Contact extends Component {
         return (
             <>
                 <div className="wrapper">
-                    {mobileDiv}{headerDiv}
+                    <MobileDiv /><HeaderDiv />
 
                     <h1 className="text_h1">Send me a message</h1>
                     <Route exact path='/contact' component={ContactForm} />
 
-                    {footerDiv}
+                    <FooterDiv />
                 </div>
             </>
         );
@@ -132,11 +107,11 @@ class Main extends Component{
         return (
                 <>
                     <div className="wrapper">
-                        {mobileDiv}{headerDiv}
+                        <MobileDiv /><HeaderDiv />
 
                         <Route exact path='/' component={Welcome} />
 
-                        {footerDiv}
+                        <FooterDiv />
                     </div>
                 </>
         );
