@@ -81,13 +81,20 @@ class Passions extends Component {
 }
 
 class PriceList extends Component {
+    constructor(props) {
+        super(props);
+        this.state= {
+            value: "en"
+        };
+    }
+
     render() {
         return (
             <>
                 <div className="wrapper">
                     <MobileDiv /><HeaderDiv />
 
-                    <h1 className="text_h1">Offer</h1>
+                    <h1 className="text_h1"><Trans i18nKey="menu4"> </Trans></h1>
                     <Route exact path='/offer' component={Offer} />
 
                     <FooterDiv />

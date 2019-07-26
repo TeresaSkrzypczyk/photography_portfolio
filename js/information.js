@@ -16,6 +16,7 @@ class Information extends Component {
 
         return (
             <>
+                <br />
                 <h3 className="text_h3"><Trans> {t("practical1")} </Trans></h3>
                 <ul className="practical_information">
                     <li><Trans> {t("practical2")} </Trans></li>

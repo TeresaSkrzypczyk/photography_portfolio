@@ -38,7 +38,7 @@ export default [
     {
         id: 7,
         name: "Weeding",
-        detail: "outdoor session, if you pick me to the weeding day you'll have discount :)",
+        detail: "outdoor session discount with wedding package :)",
         price: 400.00
     },
     {
