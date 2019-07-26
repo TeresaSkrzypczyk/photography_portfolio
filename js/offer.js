@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import ReactDOM from "react-dom";
 import list from "./prices/prices";
+import Information from "./information"
 
 class Prices extends Component {
     constructor(props) {
@@ -61,24 +62,6 @@ function Trash({products, onBuy}) {
             </ul>
             {sum > 0 ? <h3 className="text_h3">Total: {sum} pln</h3> : null}
         </div>);
-}
-
-function Information() {
-    return (
-            <>
-                <h3 className="text_h3">Practical Information</h3>
-                <ul className="practical_information">
-                    <li>The photographic material will be ready within 20 working days after the photoshoot</li>
-                    <li>Additional cost eg. admission tickets are on your side</li>
-                    <li>The prices quoted are gross prices</li>
-                </ul>
-                <h3 className="text_h3">During the wedding day:</h3>
-                <ul className="practical_information">
-                    <li>I can travel for the job in the Lower Silesia for no charge, for longer distances, the cost shall be determinated individually</li>
-                    <li>If your wedding is more than 100km form Wrocław I require accommodation</li>
-                </ul>
-            </>
-    );
 }
 
 function Offer() {
