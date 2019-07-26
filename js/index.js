@@ -21,6 +21,9 @@ import MobileDiv from "./mobile";
 import HeaderDiv from "./header";
 import FooterDiv from "./footer";
 
+import {Trans, withTranslation} from "react-i18next";
+import PropTypes from "prop-types";
+
 // const footerDiv = <div className="footer">
 //     <div>
 //         <p className="footer_text">Sit with me, take <FontAwesomeIcon icon={faMugHot} /> and catch the moments <FontAwesomeIcon icon={faHeart} /></p>
@@ -52,12 +55,22 @@ class Portfolio extends Component {
 }
 
 class Passions extends Component {
+    constructor(props) {
+        super(props);
+        this.state= {
+            value: "en"
+        };
+    }
+
     render() {
         return (
             <>
                 <div className="wrapper">
                     <MobileDiv /><HeaderDiv />
 
+                    <h1 className="text_h1"><Trans i18nKey="passion1"> </Trans></h1>
+                    <h3 className="text_h3"><Trans i18nKey="passion2"> </Trans></h3>
+                    <p className="text_p"><Trans i18nKey="passion3"> </Trans></p>
                     <br /><Route exact path='/passions' component={Photo} />
 
                     <FooterDiv />

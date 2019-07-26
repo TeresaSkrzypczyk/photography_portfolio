@@ -7,7 +7,7 @@ class Prices extends Component {
         super(props);
         this.state = {
             chosen: [],
-            availableProducts: props.list,
+            availableProducts: props.list
         };
     }
 

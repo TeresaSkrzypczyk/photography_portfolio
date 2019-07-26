@@ -11,12 +11,10 @@ class Welcome extends Component {
     constructor(props) {
         super(props);
         this.state= {
-            text: "Hello! Welcome on my page!",
+            text: (<Trans i18nKey="welcome1"> </Trans>),
             value: "en"
         };
     }
-
-    //const first = <h1 className="text_h1_home">Hello! Welcome on my page!</h1>;
 
     handleChange = event => {
         console.log("selected val is ", event.target.value);
@@ -24,12 +22,16 @@ class Welcome extends Component {
         this.setState(prevState => ({ value: newlang }));
         console.log("state value is", newlang);
         this.props.i18n.changeLanguage(newlang);
+
+        this.setState({
+            text: (<Trans i18nKey="welcome1"> </Trans>)
+        });
     };
 
     componentDidMount() {
         this.timeoutId = setTimeout(() => {
             this.setState({
-                text: "I'm really glad that you're here!"
+                text: (<Trans i18nKey="welcome2"> </Trans>)
             });
         }, 5000);
     }
@@ -52,7 +54,7 @@ class Welcome extends Component {
             </div>
 
             <div>
-                <h1 className="text_h1_home">{this.state.text}</h1>
+                <h1 className="text_h1_home"> {this.state.text} </h1>
                 <br />
                 <p className="text_p home"><Trans> {t("home1")} </Trans></p>
                 <p className="text_p home"><Trans> {t("home2")} </Trans></p>

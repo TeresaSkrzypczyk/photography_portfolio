@@ -28,6 +28,11 @@
   "form7": "Send me a message",
   "error1": "Input your name",
   "error2": "E-mail is incorrect, please check again",
-  "error3": "Please fill message field"
+  "error3": "Please fill message field",
+  "welcome1": "Hello! Welcome on my page!",
+  "welcome2": "I'm really glad that you're here!",
+  "passion1": "My passions",
+  "passion2": "City, Landscape, Nature, People",
+  "passion3": "We're surrounded by a beautiful world.<br />Sometimes it's just enough to stop and open your eyes."
 }
 
