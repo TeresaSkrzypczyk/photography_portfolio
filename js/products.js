@@ -18,13 +18,11 @@ class Products extends Component {
         return (
             <div className="left_column col-xs-12 col-sm-6 col-md-6">
                 <h3 className="text_h3"><Trans> {t("product1")} </Trans></h3>
-                <Trans i18nKey="products">
-                    <ul i18nIsDynamicList>
+                <ul>
                     {products.map(product =>
-                        <li className="list" key={product.id}> Category: {product.name} <br /> Details: {product.detail}<br /> Price: {product.price}pln <button className="btn" onClick={e => onBuy(product)}>Select</button>
+                        <li className="list" key={product.id}> <Trans> {t("category")} </Trans> {product.name} <br /><Trans> {t("details")} </Trans> {product.detail}<br /><Trans> {t("price")} </Trans> {product.price}pln <button className="btn" onClick={e => onBuy(product)}><Trans> {t("select")} </Trans></button>
                         </li>)}
                 </ul>
-                </Trans>
             </div>
         );
     }

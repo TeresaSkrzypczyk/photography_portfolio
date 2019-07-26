@@ -44,6 +44,11 @@
   "product1": "Select the moments you want to catch",
   "product2": "You've chosen",
   "product3": "You haven't selected any option yet",
-  "total": "Total:"
+  "total": "Total:",
+  "category": "Category:",
+  "details": "Details:",
+  "price": "Price:",
+  "select": "Select",
+  "delete": "Delete"
 }
 

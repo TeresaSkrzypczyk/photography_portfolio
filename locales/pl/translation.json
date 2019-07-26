@@ -44,5 +44,10 @@
   "product1": "Wybierz czym jesteś zainteresowany",
   "product2": "Wybrałeś",
   "product3": "Jeszcze nie wybrałeś żadnej opcji",
-  "total": "Suma:"
+  "total": "Suma:",
+  "category": "Kategoria:",
+  "details": "Szczegóły:",
+  "price": "Cena:",
+  "select": "Wybierz",
+  "delete": "Zrezygnuj"
 }

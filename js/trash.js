@@ -22,7 +22,7 @@ class Trash extends Component {
                 {sum > 0 ? <h3 className="text_h3"><Trans> {t("product2")} </Trans></h3> : <h3 className="text_h3"><Trans> {t("product3")} </Trans></h3>}
                 <ul>
                     {products.map(product =>
-                        <li className="list" key={product.id}> Category: {product.name} <br /> Details: {product.detail}<br /> Price: {product.price}pln <button className="btn" onClick={e => onBuy(product)}>Delete</button>
+                        <li className="list" key={product.id}> <Trans> {t("category")} </Trans> {product.name} <br /><Trans> {t("details")} </Trans> {product.detail}<br /> <Trans> {t("price")} </Trans> {product.price}pln <button className="btn" onClick={e => onBuy(product)}><Trans> {t("delete")} </Trans></button>
                         </li>)}
                 </ul>
                 {sum > 0 ? <h3 className="text_h3"><Trans> {t("total")} </Trans> {sum} pln</h3> : null}
