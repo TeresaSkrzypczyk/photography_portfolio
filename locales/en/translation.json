@@ -13,6 +13,21 @@
   "menu4": "Offer",
   "menu5": "Contact",
   "footer1": "Sit with me, take",
-  "footer2": "and catch the moments"
+  "footer2": "and catch the moments",
+  "title1": "Wedding",
+  "title2": "Wedding outdoor session",
+  "title3": "Session outdoor - pregnancy",
+  "title4": "Special occasion - baptism",
+  "title5": "Session outdoor - family time",
+  "form1": "Name:",
+  "form2": "E-mail:",
+  "form3": "Date of the session:",
+  "form4": "Message:",
+  "form5": "Send",
+  "form6": "Thanks for your message",
+  "form7": "Send me a message",
+  "error1": "Input your name",
+  "error2": "E-mail is incorrect, please check again",
+  "error3": "Please fill message field"
 }
 

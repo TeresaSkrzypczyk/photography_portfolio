@@ -16,6 +16,8 @@ class Welcome extends Component {
         };
     }
 
+    //const first = <h1 className="text_h1_home">Hello! Welcome on my page!</h1>;
+
     handleChange = event => {
         console.log("selected val is ", event.target.value);
         let newlang = event.target.value;

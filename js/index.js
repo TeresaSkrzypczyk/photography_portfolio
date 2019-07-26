@@ -42,7 +42,6 @@ class Portfolio extends Component {
                 <div className="wrapper">
                     <MobileDiv /><HeaderDiv />
 
-                    <h1 className="text_h1">My portfolio</h1>
                     <Route exact path='/portfolio' component={Work} /><br />
 
                     <FooterDiv />
@@ -92,7 +91,6 @@ class Contact extends Component {
                 <div className="wrapper">
                     <MobileDiv /><HeaderDiv />
 
-                    <h1 className="text_h1">Send me a message</h1>
                     <Route exact path='/contact' component={ContactForm} />
 
                     <FooterDiv />

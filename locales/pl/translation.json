@@ -13,5 +13,20 @@
   "menu4": "Oferta",
   "menu5": "Kontakt",
   "footer1": "Usiądź ze mną, weź",
-  "footer2": "i odpocznij chwilę"
+  "footer2": "i odpocznij chwilę",
+  "title1": "Śluby i wesela",
+  "title2": "Sejse ślubne",
+  "title3": "Sesje ciążowe",
+  "title4": "Chrzty",
+  "title5": "Sesje rodzinne",
+  "form1": "Imię:",
+  "form2": "Adres e-mail:",
+  "form3": "Data sesji:",
+  "form4": "Wiadomość:",
+  "form5": "Wyślij",
+  "form6": "Dziękuję za wiadomość",
+  "form7": "Skontaktuj się ze mną",
+  "error1": "Wpisz imię",
+  "error2": "Adres e-mail jest niepoprawny, sprawdź ponownie",
+  "error3": "Proszę napisz wiadomość"
 }
