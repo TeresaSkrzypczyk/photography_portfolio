@@ -1,6 +1,6 @@
 # photography_portfolio
 
-Projekt dotyczył stworzenia przeze mnie następujących elementów:
+## Projekt dotyczył stworzenia przeze mnie następujących elementów:
 * strony głównej,
 * dwóch różnych galerii zdjęciowych,
 * prezentacji oferty fotograficznej,
