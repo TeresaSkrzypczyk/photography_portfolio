@@ -14,12 +14,14 @@ Zarówno w headerze, jak i footerze są elementy kilkalne, które przekierowują
 
 Na stronie zastosowana jest czcionka, którą pobrałam z Google Fonts oraz ikony, które są z Icon Awesome.  
 
-Na stronie głównej można wybrać w jakim języku bądą wyświetlane informacje – angielskim lub polskim. 
+Dzięki zastosowaniu react-i18next, na stronie głównej, można wybrać w jakim języku bądą wyświetlane informacje – angielskim lub polskim. 
 
 Kolejne dwie podstrony to różnie przygotowane galerie umożliwiające prezentację materiału fotograficznego. Każde zdjęcie można powiększyć.
 
 Oferta jest skierowana do użytkownika, który chce skorzystać z usług fotograficznych, jego wybory przenoszone są z jednaj kolumny do drugiej, a kwota wybranych elementów sumuje się.
 
 Ostatnia zakładka to formularz kontaktowy, zastosowałam w nim Data Picker, który pozwala na dogodne dla użytkownika wybranie daty sesji zdjęciowej.
+
+Zastosowane style zostały opisane w sassie. 
 
 ## Cała strona została opublikowana na heroku https://photography-portfolio-trace.herokuapp.com/#/. 
