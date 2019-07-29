@@ -22,4 +22,4 @@ Oferta jest skierowana do użytkownika, który chce skorzystać z usług fotogra
 
 Ostatnia zakładka to formularz kontaktowy, zastosowałam w nim Data Picker, który pozwala na dogodne dla użytkownika wybranie daty sesji zdjęciowej.
 
-Cała strona została opublikowana na heroku https://photography-portfolio-trace.herokuapp.com/#/. 
+##Cała strona została opublikowana na heroku https://photography-portfolio-trace.herokuapp.com/#/. 
