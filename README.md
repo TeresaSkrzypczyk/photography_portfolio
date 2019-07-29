@@ -6,11 +6,11 @@ Projekt dotyczył stworzenia przeze mnie następujących elementów:
 * prezentacji oferty fotograficznej,
 * formularza kontaktowego.
 
-Struktura całego projektu przygotowałam w oparciu o framework React. 
+Strukturę całego projektu przygotowałam w oparciu o framework React. 
 
-Strona jest responsywna I jej wygląd zmienia się w zaleźności od urządzenia, na którym jest wyświetlana przykładowo menu może być wyświetlane w pełnej wersji, jak I skróconej na urządzeniach mobilnych w postaci burgera. 
+Strona jest responsywna i jej wygląd zmienia się w zaleźności od urządzenia, na którym jest wyświetlana - przykładowo menu może być wyświetlane w pełnej wersji, jak i skróconej na urządzeniach mobilnych w postaci burgera. 
 
-Zarówno w headerze, jak I footerze są elementy kilkalne, które przekierowują bądź w obrębie strony bądź do zewnętrznych źródeł. 
+Zarówno w headerze, jak i footerze są elementy kilkalne, które przekierowują bądź w obrębie strony bądź do zewnętrznych źródeł. 
 
 Na stronie zastosowana jest czcionka, którą pobrałam z Google Fonts oraz ikony, które są z Icon Awesome.  
 
