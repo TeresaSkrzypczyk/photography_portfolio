@@ -6,7 +6,7 @@
 * prezentacji oferty fotograficznej,
 * formularza kontaktowego.
 
-## Strukturę całego projektu przygotowałam w oparciu o JavaScriptową biblioteką - React. 
+## Strukturę całego projektu przygotowałam w oparciu o JavaScriptową bibliotekę - React. 
 
 Strona jest responsywna i jej wygląd zmienia się w zaleźności od urządzenia, na którym jest wyświetlana - przykładowo menu może być wyświetlane w pełnej wersji, jak i skróconej na urządzeniach mobilnych w postaci burgera. 
 
