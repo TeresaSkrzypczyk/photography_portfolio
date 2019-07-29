@@ -6,7 +6,7 @@ Projekt dotyczył stworzenia przeze mnie następujących elementów:
 * prezentacji oferty fotograficznej,
 * formularza kontaktowego.
 
-Strukturę całego projektu przygotowałam w oparciu o framework React. 
+## Strukturę całego projektu przygotowałam w oparciu o JavaScriptową biblioteką - React. 
 
 Strona jest responsywna i jej wygląd zmienia się w zaleźności od urządzenia, na którym jest wyświetlana - przykładowo menu może być wyświetlane w pełnej wersji, jak i skróconej na urządzeniach mobilnych w postaci burgera. 
 
@@ -22,4 +22,4 @@ Oferta jest skierowana do użytkownika, który chce skorzystać z usług fotogra
 
 Ostatnia zakładka to formularz kontaktowy, zastosowałam w nim Data Picker, który pozwala na dogodne dla użytkownika wybranie daty sesji zdjęciowej.
 
-##Cała strona została opublikowana na heroku https://photography-portfolio-trace.herokuapp.com/#/. 
+## Cała strona została opublikowana na heroku https://photography-portfolio-trace.herokuapp.com/#/. 
