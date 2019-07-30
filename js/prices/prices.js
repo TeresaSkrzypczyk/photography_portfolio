@@ -1,62 +1,122 @@
 export default [
     {
         id: 1,
-        name: "Wedding",
-        detail: "preparation and blessing",
+        en: {
+            name: "Wedding",
+            detail: "preparation and blessing"
+        },
+        pl: {
+            name: "Ślub",
+            detail: "przygotowanie i błogosławieństwo"
+        },
         price: 200.00
     },
     {
         id: 2,
-        name: "Wedding",
-        detail: "the arrival to church",
+        en: {
+            name: "Wedding",
+            detail: "the arrival to church"
+        },
+        pl: {
+            name: "Ślub",
+            detail: "przybycie do kościoła"
+        },
         price: 50.00
     },
     {
         id: 3,
-        name: "Wedding",
-        detail: "the wedding ceremony",
+        en: {
+            name: "Wedding",
+            detail: "the wedding ceremony"
+        },
+        pl: {
+            name: "Ślub",
+            detail: "ceremonia ślubna"
+        },
         price: 400.00
     },
     {
         id: 4,
-        name: "Wedding",
-        detail: "the wedding party",
+        en: {
+            name: "Wedding",
+            detail: "the wedding party"
+        },
+        pl: {
+            name: "Ślub",
+            detail: "wesele"
+        },
         price: 1600.00
     },
     {
         id: 5,
-        name: "Wedding",
-        detail: "mini outdoor session on the wedding day",
+        en: {
+            name: "Wedding",
+            detail: "mini outdoor session on the wedding day"
+        },
+        pl: {
+            name: "Ślub",
+            detail: "mini sesja w dniu ślubu"
+        },
         price: 150.00
     },
     {
         id: 6,
-        name: "Wedding",
-        detail: "wedding documentary",
+        en: {
+            name: "Wedding",
+            detail: "wedding documentary"
+        },
+        pl: {
+            name: "Ślub",
+            detail: "dokumentacja ślubna"
+        },
         price: 400.00
     },
     {
         id: 7,
-        name: "Weeding",
-        detail: "outdoor session discount with wedding package :)",
+        en: {
+            name: "Weeding",
+            detail: "outdoor session discount with wedding package :)"
+        },
+        pl: {
+            name: "Ślub",
+            detail: "sejsa ślubna ze zniżką w pakiecie ślubnym :)"
+        },
         price: 400.00
     },
     {
         id: 8,
-        name: "Weeding",
-        detail: "outdoor session version",
+        en: {
+            name: "Weeding",
+            detail: "outdoor session version"
+        },
+        pl: {
+            name: "Ślub",
+            detail: "sesja ślubna"
+        },
         price: 700.00
     },
     {
         id: 9,
-        name: "Special occasion session",
-        detail: "outdoor or indoor session",
+        en: {
+            name: "Special occasion session",
+            detail: "outdoor or indoor session"
+        },
+        pl: {
+            name: "Specjalne sesje zdjęciowe",
+            detail: "sesje w pomieszczeniach i na dworze"
+        },
         price: 500.00
     },
     {
         id: 10,
-        name: "Album",
-        detail: "special photo album from a session or wedding",
+        en: {
+            name: "Album",
+            detail: "special photo album from a session or wedding"
+        },
+        pl: {
+            name: "Album",
+            detail: "specjalnie przygotowana dokumentacja z sesji zdjęciowej lub ze ślubu"
+        },
         price: 200.00
     }
 ];

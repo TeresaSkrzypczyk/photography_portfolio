@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {Trans, withTranslation} from "react-i18next";
 import PropTypes from "prop-types";
-
+import {i18n as i18next} from "i18next";
 
 class Products extends Component {
     constructor(props) {
@@ -17,12 +17,16 @@ class Products extends Component {
 
         return (
             <div className="left_column col-xs-12 col-sm-6 col-md-6">
-                <h3 className="text_h3"><Trans> {t("product1")} </Trans></h3>
-                <ul>
-                    {products.map(product =>
-                        <li className="list" key={product.id}> <Trans> {t("category")} </Trans> {product.name} <br /><Trans> {t("details")} </Trans> {product.detail}<br /><Trans> {t("price")} </Trans> {product.price}pln <button className="btn" onClick={e => onBuy(product)}><Trans> {t("select")} </Trans></button>
-                        </li>)}
-                </ul>
+                <h3 className="text_h3"> <Trans> {t("product1")} </Trans> </h3>
+                    <ul>
+                       {products.map(product =>
+                            <li className="list" key={product.id}>
+                                <Trans> {t("category")} </Trans> {product[this.state.value].name} <br />
+                                <Trans> {t("details")} </Trans> {product[this.state.value].detail} <br />
+                                <Trans> {t("price")} </Trans> {product.price} pln
+                                <button className="btn" onClick={e => onBuy(product)}> <Trans> {t("select")} </Trans> </button>
+                            </li>)}
+                    </ul>
             </div>
         );
     }
@@ -34,3 +38,5 @@ Products.propTypes = {
 };
 
 export default withTranslation("translations")(Products);
+
+
