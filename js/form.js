@@ -35,6 +35,9 @@ class ContactForm extends Component {
     handleSubmit(e) {
         e.preventDefault();
 
+        const data = this.state;
+        console.log(data);
+
         if (this.validate()) {
             this.setState({send: true})
         }

@@ -23,8 +23,8 @@ class Trash extends Component {
                 <ul>
                     {products.map(product =>
                         <li className="list" key={product.id}>
-                            <Trans> {t("category")} </Trans> {product[this.state.value].name} <br />
-                            <Trans> {t("details")} </Trans> {product[this.state.value].detail} <br />
+                            <Trans> {t("category")} </Trans> {product[i18n.language].name} <br />
+                            <Trans> {t("details")} </Trans> {product[i18n.language].detail} <br />
                             <Trans> {t("price")} </Trans> {product.price} pln
                             <button className="btn" onClick={e => onBuy(product)}><Trans> {t("delete")} </Trans></button>
                         </li>)}
