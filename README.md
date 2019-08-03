@@ -25,7 +25,7 @@ The applied styles are coded in Sass. 
 
 ## I have also published this webpage on Heroku so that you can see the all features demonstrated: https://photography-portfolio-trace.herokuapp.com/#/
 
-
+Copyright © 2019 Teresa Ziółkowska. All rights reserved.
 
 
 ## Projekt dotyczył stworzenia przeze mnie następujących elementów:
@@ -53,3 +53,5 @@ Ostatnia zakładka to formularz kontaktowy, zastosowałam w nim Data Picker, kt�
 Zastosowane style zostały opisane w Sassie. 
 
 ## Cała strona została opublikowana na Heroku https://photography-portfolio-trace.herokuapp.com/#/. 
+
+Copyright © 2019 Teresa Ziółkowska. Wszystkie prawa zastrzeżone.

@@ -24,6 +24,10 @@
 
   }
 
+  .heart {
+    color: $color-primary;
+  }
+
   :last-child p {
     font-size: 0.75rem;
     color: $color-secondary;

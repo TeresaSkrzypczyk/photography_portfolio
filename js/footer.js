@@ -1,6 +1,6 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCopyright, faHeart, faMugHot} from "@fortawesome/free-solid-svg-icons";
-import {faFacebookSquare, faInstagram, faTwitterSquare} from "@fortawesome/free-brands-svg-icons";
+import {faFacebookSquare, faInstagram, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import React, {Component} from "react";
 import {Trans, withTranslation} from "react-i18next";
 
@@ -11,11 +11,11 @@ class FooterDiv extends Component {
         return (
             <div className="footer">
                 <div>
-                    <p><Trans> {t("footer1")} </Trans> <FontAwesomeIcon icon={faMugHot} /> <Trans> {t("footer2")} </Trans> <FontAwesomeIcon icon={faHeart} /></p>
+                    <p><Trans> {t("footer1")} </Trans> <FontAwesomeIcon icon={faMugHot} /> <Trans> {t("footer2")} </Trans> <FontAwesomeIcon icon={faHeart} className="heart"/></p>
                 </div>
                 <div>
                     <a href="https://www.instagram.com/te.skrzypczyk/" target="_blank"><FontAwesomeIcon icon={faInstagram} className="icon_media"/></a>
-                    <a href="https://twitter.com/" target="_blank"><FontAwesomeIcon icon={faTwitterSquare} className="icon_media"/></a>
+                    <a href="https://www.linkedin.com/in/teresa-magdalena-ziolkowska/" target="_blank"><FontAwesomeIcon icon={faLinkedin} className="icon_media"/></a>
                     <a href="https://www.facebook.com/tereska.skrzypczyk" target="_blank"><FontAwesomeIcon icon={faFacebookSquare} className="icon_media"/></a>
                 </div>
                 <div>
