@@ -4,7 +4,6 @@ import Carousel, { Modal, ModalGateway } from "react-images";
 import { photos } from "./photos/world";
 import Translation from './translation';
 import {Trans, withTranslation} from "react-i18next";
-import PropTypes from "prop-types";
 
 function Photo () {
     const [currentImage, setCurrentImage] = useState(0);
@@ -48,9 +47,5 @@ function Photo () {
         </>
     );
 }
-
-Photo.propTypes = {
-    classes: PropTypes.object.isRequired
-};
 
 export default withTranslation("translations")(Photo);

@@ -1,7 +1,5 @@
 import React, {Component} from "react";
 import {Trans, withTranslation} from "react-i18next";
-import PropTypes from "prop-types";
-
 
 class Trash extends Component {
     constructor(props) {
@@ -35,10 +33,6 @@ class Trash extends Component {
     }
 
 }
-
-Trash.propTypes = {
-    classes: PropTypes.object.isRequired
-};
 
 export default withTranslation("translations")(Trash);
 

@@ -2,7 +2,6 @@ import React, {Component} from "react";
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 import {Trans, withTranslation} from "react-i18next";
-import PropTypes from "prop-types";
 import Translation from './translation';
 
 class ContactForm extends Component {
@@ -91,9 +90,5 @@ class ContactForm extends Component {
             </>);
     }
 }
-
-ContactForm.propTypes = {
-    classes: PropTypes.object.isRequired
-};
 
 export default withTranslation("translations")(ContactForm);

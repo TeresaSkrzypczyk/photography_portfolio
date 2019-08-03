@@ -3,7 +3,6 @@ import Gallery from "react-grid-gallery";
 import { wedding, wedding_outdoor, baptism, family, pregnancy } from "./photos/work";
 import Translation from './translation';
 import {Trans, withTranslation} from "react-i18next";
-import PropTypes from "prop-types";
 
 class Work extends Component {
     render () {
@@ -72,10 +71,6 @@ class Work extends Component {
     }
 
 }
-
-Work.propTypes = {
-    classes: PropTypes.object.isRequired
-};
 
 export default withTranslation("translations")(Work);
 

@@ -1,7 +1,5 @@
 import React, {Component} from "react";
-import PropTypes from "prop-types";
 import {Trans, withTranslation} from "react-i18next";
-
 
 class Information extends Component {
     render() {
@@ -25,9 +23,5 @@ class Information extends Component {
         );
     }
 }
-
-Information.propTypes = {
-    classes: PropTypes.object.isRequired
-};
 
 export default withTranslation("translations")(Information);

@@ -4,7 +4,6 @@ import FormControl from "@material-ui/core/FormControl";
 import RadioGroup from "@material-ui/core/RadioGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Radio from "@material-ui/core/Radio";
-import PropTypes from "prop-types";
 
 class Translation extends Component {
     constructor(props) {
@@ -38,9 +37,5 @@ class Translation extends Component {
         );
     }
 }
-
-Translation.propTypes = {
-    classes: PropTypes.object.isRequired
-};
 
 export default withTranslation("translations")(Translation);

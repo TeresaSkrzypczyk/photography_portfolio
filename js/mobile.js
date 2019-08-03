@@ -3,7 +3,6 @@ import {faBars, faPaw} from "@fortawesome/free-solid-svg-icons";
 import {NavLink} from "react-router-dom";
 import React, {Component} from "react";
 import {Trans, withTranslation} from "react-i18next";
-import PropTypes from "prop-types";
 
 class MobileDiv extends Component {
     render() {
@@ -24,9 +23,5 @@ class MobileDiv extends Component {
         );
     }
 }
-
-MobileDiv.propTypes = {
-    classes: PropTypes.object.isRequired
-};
 
 export default withTranslation("translations")(MobileDiv);

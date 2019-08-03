@@ -1,7 +1,5 @@
 import React, {Component} from "react";
-import ReactDOM from "react-dom";
 import {Trans, withTranslation} from "react-i18next";
-import PropTypes from "prop-types";
 import Radio from "@material-ui/core/Radio";
 import RadioGroup from "@material-ui/core/RadioGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
@@ -68,10 +66,6 @@ class Welcome extends Component {
         </>)
     }
 }
-
-Welcome.propTypes = {
-    classes: PropTypes.object.isRequired
-};
 
 export default withTranslation("translations")(Welcome);
 

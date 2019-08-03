@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import {Trans, withTranslation} from "react-i18next";
-import PropTypes from "prop-types";
 
 class Products extends Component {
     render() {
@@ -24,10 +23,6 @@ class Products extends Component {
     }
 
 }
-
-Products.propTypes = {
-    classes: PropTypes.object.isRequired
-};
 
 export default withTranslation("translations")(Products);
 

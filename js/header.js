@@ -3,7 +3,6 @@ import {faPaw} from "@fortawesome/free-solid-svg-icons";
 import {NavLink} from "react-router-dom";
 import React, {Component} from "react";
 import {Trans, withTranslation} from "react-i18next";
-import PropTypes from "prop-types";
 
 class HeaderDiv extends Component {
     render() {
@@ -27,10 +26,6 @@ class HeaderDiv extends Component {
         );
     }
 }
-
-HeaderDiv.propTypes = {
-    classes: PropTypes.object.isRequired
-};
 
 export default withTranslation("translations")(HeaderDiv);
 

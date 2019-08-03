@@ -3,8 +3,6 @@ import {faCopyright, faHeart, faMugHot} from "@fortawesome/free-solid-svg-icons"
 import {faFacebookSquare, faInstagram, faTwitterSquare} from "@fortawesome/free-brands-svg-icons";
 import React, {Component} from "react";
 import {Trans, withTranslation} from "react-i18next";
-import PropTypes from "prop-types";
-
 
 class FooterDiv extends Component {
     render() {
@@ -27,9 +25,5 @@ class FooterDiv extends Component {
         );
     }
 }
-
-FooterDiv.propTypes = {
-    classes: PropTypes.object.isRequired
-};
 
 export default withTranslation("translations")(FooterDiv);
