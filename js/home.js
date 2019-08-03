@@ -53,11 +53,7 @@ class Welcome extends Component {
 
             <div>
                 <h1 className="text_h1"> {this.state.text} </h1>
-                <br />
-                <p className="text_p home"><Trans> {t("home1")} </Trans></p>
-                <p className="text_p home"><Trans> {t("home2")} </Trans></p>
-                <p className="text_p home"><Trans> {t("home3")} </Trans></p>
-                <p className="text_p home"><Trans> {t("home4")} </Trans></p>
+                <p className="text_p home"><Trans> {t("home")} </Trans></p>
             </div>
             <div className="main_photo">
                 <img className="color_photo" src="../img/mecolor.jpg" />

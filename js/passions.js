@@ -28,6 +28,7 @@ function Photo () {
             <p className="text_p"><Trans i18nKey="passion3"> </Trans></p>
 
             <div>
+                <br />
                 <Gallery photos={photos} onClick={openLightbox} />
                 <ModalGateway>
                     {viewerIsOpen ? (
