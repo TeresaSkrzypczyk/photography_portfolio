@@ -1,7 +1,6 @@
 import i18n from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import XHR from "i18next-xhr-backend";
-
 import translationEng from "../locales/en/translation.json";
 import translationPl from "../locales/pl/translation.json";
 
@@ -11,12 +10,12 @@ i18n
     .init({
         debug: true,
         lng: "en",
-        fallbackLng: "en", // use en if detected lng is not available
+        fallbackLng: "en",
 
-        keySeparator: false, // we do not use keys in form messages.welcome
+        keySeparator: false,
 
         interpolation: {
-            escapeValue: false // react already safes from xss
+            escapeValue: false
         },
 
         resources: {
@@ -27,7 +26,7 @@ i18n
                 translations: translationPl
             }
         },
-        // have a common namespace used around the full app
+
         ns: ["translations"],
         defaultNS: "translations"
     });

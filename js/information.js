@@ -4,13 +4,6 @@ import {Trans, withTranslation} from "react-i18next";
 
 
 class Information extends Component {
-    constructor(props) {
-        super(props);
-        this.state= {
-            value: "en"
-        };
-    }
-
     render() {
         const { t, i18n } = this.props;
 

@@ -1,19 +1,11 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faBars, faPaw} from "@fortawesome/free-solid-svg-icons";
+import {faPaw} from "@fortawesome/free-solid-svg-icons";
 import {NavLink} from "react-router-dom";
 import React, {Component} from "react";
-
 import {Trans, withTranslation} from "react-i18next";
 import PropTypes from "prop-types";
 
 class HeaderDiv extends Component {
-    constructor(props) {
-        super(props);
-        this.state= {
-            value: "en"
-        };
-    }
-
     render() {
         const { t, i18n } = this.props;
 

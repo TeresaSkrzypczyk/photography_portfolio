@@ -1,16 +1,8 @@
 import React, {Component} from "react";
 import {Trans, withTranslation} from "react-i18next";
 import PropTypes from "prop-types";
-import {i18n as i18next} from "i18next";
 
 class Products extends Component {
-    constructor(props) {
-        super(props);
-        this.state= {
-            value: "en"
-        };
-    }
-
     render() {
         const {products, onBuy} = this.props;
         const { t, i18n } = this.props;

@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import ReactDOM from "react-dom";
 import Gallery from "react-grid-gallery";
 import { wedding, wedding_outdoor, baptism, family, pregnancy } from "./photos/work";
 
@@ -7,13 +6,6 @@ import {Trans, withTranslation} from "react-i18next";
 import PropTypes from "prop-types";
 
 class Work extends Component {
-    constructor(props) {
-        super(props);
-        this.state= {
-            value: "en"
-        };
-    }
-
     render () {
         const style = { display: "block",
             minHeight: "1px",

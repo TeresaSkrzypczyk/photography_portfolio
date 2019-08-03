@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import ReactDOM from "react-dom";
 import list from "./prices/prices";
 import Information from "./information";
 import Products from "./products";

@@ -1,8 +1,6 @@
 import React, {Component} from "react";
-import ReactDOM from "react-dom";
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
-
 import {Trans, withTranslation} from "react-i18next";
 import PropTypes from "prop-types";
 
@@ -15,8 +13,7 @@ class ContactForm extends Component {
             startDate: new Date(),
             text: "",
             errors: [],
-            send: false,
-            value: "en"
+            send: false
         }
     }
 

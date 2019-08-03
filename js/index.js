@@ -12,31 +12,13 @@ import Offer from './offer';
 import Welcome from './home';
 import Photo from './passions';
 import Work from './portfolio';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faBars, faPaw, faMugHot, faHeart, faCopyright} from '@fortawesome/free-solid-svg-icons';
-import {faFacebookSquare, faInstagram, faTwitterSquare} from "@fortawesome/free-brands-svg-icons";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./i18n";
 import MobileDiv from "./mobile";
 import HeaderDiv from "./header";
 import FooterDiv from "./footer";
+import {Trans} from "react-i18next";
 
-import {Trans, withTranslation} from "react-i18next";
-import PropTypes from "prop-types";
-
-// const footerDiv = <div className="footer">
-//     <div>
-//         <p className="footer_text">Sit with me, take <FontAwesomeIcon icon={faMugHot} /> and catch the moments <FontAwesomeIcon icon={faHeart} /></p>
-//     </div>
-//     <div>
-//         <a href="https://www.instagram.com/te.skrzypczyk/" target="_blank"><FontAwesomeIcon icon={faInstagram} className="icon_media"/></a>
-//         <a href="https://twitter.com/" target="_blank"><FontAwesomeIcon icon={faTwitterSquare} className="icon_media"/></a>
-//         <a href="https://www.facebook.com/tereska.skrzypczyk" target="_blank"><FontAwesomeIcon icon={faFacebookSquare} className="icon_media"/></a>
-//     </div>
-//     <div>
-//         <p><FontAwesomeIcon icon={faCopyright} /> Teresa Ziółkowska 2019 </p>
-//     </div>
-// </div>;
 
 class Portfolio extends Component {
     render() {
@@ -55,13 +37,6 @@ class Portfolio extends Component {
 }
 
 class Passions extends Component {
-    constructor(props) {
-        super(props);
-        this.state= {
-            value: "en"
-        };
-    }
-
     render() {
         return (
             <>
@@ -81,13 +56,6 @@ class Passions extends Component {
 }
 
 class PriceList extends Component {
-    constructor(props) {
-        super(props);
-        this.state= {
-            value: "en"
-        };
-    }
-
     render() {
         return (
             <>
