@@ -3,6 +3,8 @@ import list from "./prices/prices";
 import Information from "./information";
 import Products from "./products";
 import Trash from "./trash";
+import Translation from './translation';
+import {Trans} from "react-i18next";
 
 class Prices extends Component {
     constructor(props) {
@@ -40,6 +42,10 @@ class Prices extends Component {
 function Offer() {
     return (
             <>
+                <Translation />
+
+                <h1 className="text_h1"><Trans i18nKey="menu4"> </Trans></h1>
+
                 <Prices list={list} />
                 <Information />
             </>

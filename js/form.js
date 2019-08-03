@@ -3,6 +3,7 @@ import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 import {Trans, withTranslation} from "react-i18next";
 import PropTypes from "prop-types";
+import Translation from './translation';
 
 class ContactForm extends Component {
     constructor(props) {
@@ -79,7 +80,10 @@ class ContactForm extends Component {
 
         return (
             <>
+                <Translation />
+
                 <h1 className="text_h1"><Trans> {t("form7")} </Trans></h1>
+
                 <div className="general">
                     <ul className="errors_information">{this.state.errors.map((error, index) => <li className="errors"  key={index}>{error}</li>)}</ul>
                     {this.state.send ? <h3 className="text_h3"><Trans> {t("form6")} </Trans></h3> : form}

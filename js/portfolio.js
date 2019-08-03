@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import Gallery from "react-grid-gallery";
 import { wedding, wedding_outdoor, baptism, family, pregnancy } from "./photos/work";
-
+import Translation from './translation';
 import {Trans, withTranslation} from "react-i18next";
 import PropTypes from "prop-types";
 
@@ -18,6 +18,8 @@ class Work extends Component {
 
         return (
             <>
+                <Translation />
+
                 <h1 className="text_h1"><Trans> {t("menu2")} </Trans></h1>
 
                 <div style={style}>

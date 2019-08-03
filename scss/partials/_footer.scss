@@ -16,6 +16,12 @@
   .icon_media {
     font-size: 3rem;
     padding-right: 1rem;
+    transition: $transition-primary;
+
+    &:hover {
+      color: $color-primary;
+    }
+
   }
 
   :last-child p {

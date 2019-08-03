@@ -17,8 +17,6 @@ import i18n from "./i18n";
 import MobileDiv from "./mobile";
 import HeaderDiv from "./header";
 import FooterDiv from "./footer";
-import {Trans} from "react-i18next";
-
 
 class Portfolio extends Component {
     render() {
@@ -43,10 +41,7 @@ class Passions extends Component {
                 <div className="wrapper">
                     <MobileDiv /><HeaderDiv />
 
-                    <h1 className="text_h1"><Trans i18nKey="passion1"> </Trans></h1>
-                    <h3 className="text_h3"><Trans i18nKey="passion2"> </Trans></h3>
-                    <p className="text_p"><Trans i18nKey="passion3"> </Trans></p>
-                    <br /><Route exact path='/passions' component={Photo} />
+                    <Route exact path='/passions' component={Photo} />
 
                     <FooterDiv />
                 </div>
@@ -62,7 +57,6 @@ class PriceList extends Component {
                 <div className="wrapper">
                     <MobileDiv /><HeaderDiv />
 
-                    <h1 className="text_h1"><Trans i18nKey="menu4"> </Trans></h1>
                     <Route exact path='/offer' component={Offer} />
 
                     <FooterDiv />

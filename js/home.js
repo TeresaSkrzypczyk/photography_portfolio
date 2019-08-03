@@ -54,7 +54,7 @@ class Welcome extends Component {
             </div>
 
             <div>
-                <h1 className="text_h1_home"> {this.state.text} </h1>
+                <h1 className="text_h1"> {this.state.text} </h1>
                 <br />
                 <p className="text_p home"><Trans> {t("home1")} </Trans></p>
                 <p className="text_p home"><Trans> {t("home2")} </Trans></p>
