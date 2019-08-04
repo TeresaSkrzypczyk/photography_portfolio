@@ -26,6 +26,12 @@
 
   .heart {
     color: $color-primary;
+    animation: myanimation 2s infinite;
+  }
+
+  @keyframes myanimation {
+    0% {color: $color-text;}
+    50%{color: $color-primary;}
   }
 
   :last-child p {

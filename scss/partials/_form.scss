@@ -26,6 +26,12 @@ div.box label {
     width: 125%;
   }
 
+  textarea {
+    font-family: Arial, sans-serif;
+    resize: vertical;
+    overflow: auto;
+  }
+
 }
 
 div.box label span {
