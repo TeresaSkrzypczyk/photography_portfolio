@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {Trans, withTranslation} from "react-i18next";
+import {withTranslation} from "react-i18next";
 import FormControl from "@material-ui/core/FormControl";
 import RadioGroup from "@material-ui/core/RadioGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
@@ -22,13 +22,10 @@ class Translation extends Component {
     };
 
     render() {
-        const {t, i18n} = this.props;
-
         return (
             <div className="app-bar">
                 <FormControl component="fieldset">
-                    <RadioGroup aria-label="Gender" name="gender1" value={this.state.value}
-                                onChange={this.handleChange}>
+                    <RadioGroup value={this.state.value} onChange={this.handleChange}>
                         <FormControlLabel value="en" control={<Radio/>} label="English"/>
                         <FormControlLabel value="pl" control={<Radio/>} label="Polish"/>
                     </RadioGroup>
